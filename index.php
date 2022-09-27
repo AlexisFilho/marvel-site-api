@@ -8,16 +8,6 @@
     <base href="http://localhost/tarefa-05-09-2022/">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
-
-    <style>
-        footer {
-            width: 100%;
-            height: 100px;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-        }
-    </style>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg bg-light">
@@ -44,9 +34,6 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="api">API</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="webservice">WEBSERVICE</a>
                     </li>
                 </ul>
             </div>
