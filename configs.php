@@ -1,6 +1,6 @@
 <?php 
-    $privatekey = "c62445eb6952ac356e4fa17b5e738330dfdb18af";
-    $plublickey = "873ccd8ecf37ff058ae01e7d6c0e38e7";
+    $privatekey = "ece433bea8a5f378b35cc19c15789f05b8e75a52";
+    $plublickey = "86e16f88eaf2546f408c1d3e5951337c";
     $time = time();
 
     function gerarhash($privatekey, $plublickey, $time) {

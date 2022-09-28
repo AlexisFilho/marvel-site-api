@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tarefa 05-09-2022</title>
-    <base href="http://localhost/tarefa-05-09-2022/">
+    <title>Marvel Site Api</title>
+    <base href="http://localhost/marvel-site-api/">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 
@@ -20,7 +20,7 @@
     </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
             <button class="navbar-toggler" 
                 type="button" 
@@ -31,22 +31,23 @@
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.php">TRABALHO</a>
+                        <a class="nav-link" href="index.php">???</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="json">JSON</a>
+                        <a class="nav-link" href="json">???</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="xml">XML</a>
+                        <a class="nav-link" href="xml">???</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="api">API</a>
+                        <a class="nav-link" href="api">???</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="webservice">WEBSERVICE</a>
+                        <a class="nav-link" href="webservice">???</a>
                     </li>
                 </ul>
             </div>
@@ -72,13 +73,6 @@
             }
         ?>
     </main>
-
-    <footer class="bg-light" style:{postion: absolute}>
-            <p class="text-center">
-                Desenvolvido por 
-                <br>Mateus da Silva
-            </p>
-    </footer>
     
     <script 
         src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" 
