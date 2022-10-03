@@ -56,7 +56,7 @@
 
     <main class="container">
         <?php
-            $pagina = "trabalho";
+            $pagina = "index";
 
             if ( isset( $_GET["param"] ) ) {
                 $param = trim( $_GET["param"] );
