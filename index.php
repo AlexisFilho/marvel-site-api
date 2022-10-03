@@ -8,16 +8,6 @@
     <base href="http://localhost/marvel-site-api/">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
-
-    <style>
-        footer {
-            width: 100%;
-            height: 100px;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-        }
-    </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-light">
@@ -45,9 +35,6 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="api">???</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="webservice">???</a>
                     </li>
                 </ul>
             </div>
