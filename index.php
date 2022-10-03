@@ -7,7 +7,7 @@
     <title>Marvel Site Api</title>
     <base href="http://localhost/marvel-site-api/">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-light">
@@ -21,29 +21,34 @@
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.php">???</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="json">???</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="xml">???</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="api">???</a>
-                    </li>
-                </ul>
+
+            <div class="text-center">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.php">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="json">PERSONAGENS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="xml">FILMES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="api">QUADRINHOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="api">GAMES</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </nav>
 
     <main class="container">
         <?php
-            $pagina = "index";
+            $pagina = "home";
 
             if ( isset( $_GET["param"] ) ) {
                 $param = trim( $_GET["param"] );
