@@ -169,3 +169,7 @@ body {
         bottom: 100%;
     }
 }
+
+.logo{
+    width: 100px !important;
+}

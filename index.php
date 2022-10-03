@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marvel Site Api</title>
+    <link rel="shortcut icon" href="imagens/arc.png">
     <base href="http://localhost/marvel-site-api/">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-light">
@@ -21,6 +22,7 @@
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -37,10 +39,13 @@
                         <a class="nav-link" href="api">???</a>
                     </li>
                 </ul>
+                <a href="index.php">
+                    <img src="imagens/logo.png" alt="marvel" class="logo">
+                </a>
             </div>
         </div>
     </nav>
-
+    
     <main class="container">
         <?php
             $pagina = "index";
