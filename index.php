@@ -1,3 +1,6 @@
+<?php
+    include "configs.php";
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -5,10 +8,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marvel Site Api</title>
-    <link rel="shortcut icon" href="imagens/arc.png">
+    <link rel="shortcut icon" href="imagens/shield.png">
     <base href="http://localhost/marvel-site-api/">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-light">
@@ -51,9 +54,6 @@
                 <img src="imagens/logo.png" alt="marvel" class="logo">
             </a>
         </div>
-        <a>
-            <!-- <img src="imagens/logo.png" alt="marvel" class="logo"> -->
-        </a>
     </nav>
     
     <main class="container">

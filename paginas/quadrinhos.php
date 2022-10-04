@@ -4,7 +4,7 @@
 <div class="row">
 <?php
     //arquivo que sera executado
-    $arquivo = "https://gateway.marvel.com/v1/public/comics?{$url}";
+    $arquivo = "https://gateway.marvel.com/v1/public/comics".URL;
 
     //recupera os dados do arquivo
     $dados = file_get_contents($arquivo);
@@ -20,7 +20,8 @@
         ?>
             <div class="col-12 col-md-3">
                 <div class="card">
-                    <img src="<?=$cover?>" alt="<?=$quadrinho->title?>" class="w-100">
+                    <img src="<?=$cover?>" alt="<?=$quadrinho->title?>" class="w-100" style="height:60vh">
+
                     <div class="card-body text-center">
                         <p class="titulo">
                             <strong>
@@ -28,7 +29,7 @@
                             </strong>
                         </p>
                         <p>
-                            <a href="quadrinho/<?=quadrinho->id?>" class="btn btn-warning">
+                            <a href="quadrinho/<?=$quadrinho->id?>" class="btn btn-warning">
                                 Ver detalhes
                             </a>
                         </p>
