@@ -1,3 +1,7 @@
+<?php
+    include "configs.php";
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
