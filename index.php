@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="imagens/arc.png">
     <base href="http://localhost/marvel-site-api/">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-light">
@@ -30,24 +30,27 @@
                             <a class="nav-link" href="index.php">HOME</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="json">PERSONAGENS</a>
+                            <a class="nav-link" href="personagens">PERSONAGENS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="xml">FILMES</a>
+                            <a class="nav-link" href="filmes">FILMES</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="api">QUADRINHOS</a>
+                            <a class="nav-link" href="series">SÉRIES</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="api">GAMES</a>
+                            <a class="nav-link" href="quadrinhos">QUADRINHOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="games">GAMES</a>
                         </li>
                     </ul>
                 </div>
-                <a>
-                    <img src="imagens/logo.png" alt="marvel" class="logo">
-                </a>
             </div>
         </div>
+        <a>
+            <!-- <img src="imagens/logo.png" alt="marvel" class="logo"> -->
+        </a>
     </nav>
     
     <main class="container">
