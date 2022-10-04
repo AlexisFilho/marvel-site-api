@@ -36,17 +36,17 @@
                             <a class="nav-link" href="xml">FILMES</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="api">QUADRINHOS</a>
+                            <a class="nav-link" href="quadrinhos">QUADRINHOS</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="api">GAMES</a>
                         </li>
                     </ul>
                 </div>
-                <a>
-                    <img src="imagens/logo.png" alt="marvel" class="logo">
-                </a>
             </div>
+            <a href="index.php">
+                <img src="imagens/logo.png" alt="marvel" class="logo">
+            </a>
         </div>
     </nav>
     
