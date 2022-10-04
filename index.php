@@ -51,6 +51,9 @@
                     </ul>
                 </div>
             </div>
+            <a href="index.php">
+                <img src="imagens/logo.png" alt="marvel" class="logo">
+            </a>
         </div>
         <a>
             <!-- <img src="imagens/logo.png" alt="marvel" class="logo"> -->
