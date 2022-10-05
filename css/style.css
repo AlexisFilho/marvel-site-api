@@ -173,3 +173,8 @@ body {
 .logo{
     width: 100px !important;
 }
+
+.card .titulo{
+
+    height: 70px;
+}
