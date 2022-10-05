@@ -45,7 +45,7 @@
                             <a class="nav-link" href="quadrinhos">QUADRINHOS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="games">GAMES</a>
+                            <a class="nav-link" href="sagas">SAGAS</a>
                         </li>
                     </ul>
                 </div>
