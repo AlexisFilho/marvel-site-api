@@ -12,8 +12,8 @@
     // Esta url se ao fato de que essa api necessita de um hash que é gerado através das informações privatekey,
     // publickey e timestamp, para a utilização de seus recursos.
     // $url = "http://gateway.marvel.com/v1/public/comics?ts={$time}&apikey={$plublickey}&hash={$hash}";
-    define("URLL", "?ts={$time}&apikey={$publickey}&hash={$hash}");
+    define("URL", "?ts={$time}&apikey={$publickey}&hash={$hash}");
     define("IMG", "http://i.annihil.us/u/prod/marvel/i/mg/");
 
-    echo URLL;
+    echo URL;
 ?>
