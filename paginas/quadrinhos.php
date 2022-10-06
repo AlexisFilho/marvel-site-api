@@ -3,17 +3,11 @@
 </h1>
 <div class="row">
 <?php
-    //arquivo que sera executado
     $arquivo = "https://gateway.marvel.com/v1/public/comics".URL;
-
-    //recupera os dados do arquivo
     $dados = file_get_contents($arquivo);
-
-    //tranformar json em objeto
     $dados = json_decode($dados);
 
     foreach($dados->data->results as $quadrinho){
-        //echo"<p>{$filme->title}</p>";
         $image = $quadrinho->thumbnail->path;
         $extension = $quadrinho->thumbnail->extension;
         $cover = $image.".".$extension;
