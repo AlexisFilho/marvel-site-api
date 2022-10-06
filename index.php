@@ -1,5 +1,6 @@
 <?php
     include "configs.php";
+    include "funcoes/personagens/getDescriptionFromCharacter.php";
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
