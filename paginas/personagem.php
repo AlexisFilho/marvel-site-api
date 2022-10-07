@@ -43,7 +43,7 @@
 
                 foreach($dados->data->results as $quadrinho) {
                     $poster = $quadrinho->thumbnail;
-                    $image = "{$poster->path}.{$poster->extension}";
+                    $image = "{$poster->path}/standard_fantastic.{$poster->extension}";
             ?>
 
                     <div class="col-12 col-md-3">

@@ -48,6 +48,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="sagas">SAGAS</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="criadores">CRIADORES</a>
+                        </li>
                     </ul>
                 </div>
             </div>
