@@ -25,7 +25,7 @@
                 </div>
                 <div class="col-12 col-md-9 text-justify">
                     <h1 class="text-center"><?=$results->title?></h1>
-                    <p><?=$description?></p>
+                    <p><?=$results->description?></p>
                 </div>
             </div>
         </div>
