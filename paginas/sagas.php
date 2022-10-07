@@ -11,14 +11,19 @@
 
             <div class="col-12 col-md-3">
                 <div class="card">
+                    <img src="<?=$image?>" alt="<?=$stories->title?>">
                     <div class="card-body text-center">
                         <p class="titulo">
                             <strong>
                                 <?=$stories->title?>;
                             </strong>
                         </p>
+                        <p>
+                            <a href="saga/<?=$stories->id?>" class="btn btn-warning">
+                                Detalhes
+                            </a>
+                        </p>
                     </div>
-                    <img src="<?=$image?>" alt="<?=$stories->title?>">
                 </div>
             </div>
 
