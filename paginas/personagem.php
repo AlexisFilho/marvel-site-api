@@ -29,8 +29,10 @@
                 </div>
             </div>
         </div>
-
-        <h2>Quadrinhos que participou:</h2>
+        
+        <font color="white">
+            <h2>Quadrinhos que participou:</h2>
+        </font>
 
         <div class="row">
             <?php
@@ -55,6 +57,43 @@
                             <p>
                                 <a href="quadrinho/<?=$quadrinho->id?>" class="btn btn-warning">
                                     Ver quadrinho
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+
+            <?php
+                }
+            ?>
+        </div>
+
+        <font color="white">
+            <h2 color="white">Séries que participou:</h2>
+        </font>
+
+        <div class="row">
+            <?php
+                echo $arquivo = "http://gateway.marvel.com/v1/public/characters/{$id}/series".URL;
+
+                $dados = file_get_contents($arquivo);
+                $dados = json_decode($dados);
+
+                // echo $dados;
+
+                foreach($dados->data->results as $serie) {
+                    $poster = $serie->thumbnail;
+                    $image = "{$poster->path}/standard_fantastic.{$poster->extension}";
+            ?>
+
+                    <div class="col-12 col-md-3">
+                        <div class="card text-center">
+                            <img src="<?=$image?>" alt="">
+                            <p>
+                                <strong><?=$serie->title?></strong>
+                            </p>
+                            <p>
+                                <a href="serie/<?=$serie->id?>" class="btn btn-warning">
+                                    Ver série
                                 </a>
                             </p>
                         </div>

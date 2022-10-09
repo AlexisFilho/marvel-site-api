@@ -30,7 +30,9 @@
             </div>
         </div>
 
-        <h2>Quadrinhos que participou:</h2>
+        <font color="white">
+            <h2>Quadrinhos que participou:</h2>
+        </font>
 
         <div class="row">
             <?php

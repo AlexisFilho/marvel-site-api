@@ -15,7 +15,7 @@
                     <div class="card-body text-center">
                         <p class="titulo">
                             <strong>
-                                <?=$serie->title?>;
+                                <?=$serie->title?>
                             </strong>
                         </p>
                         <p>

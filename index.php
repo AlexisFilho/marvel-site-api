@@ -12,7 +12,7 @@
     <link rel="shortcut icon" href="imagens/shield.png">
     <base href="http://localhost/marvel-site-api/">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-light">

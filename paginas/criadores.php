@@ -15,7 +15,7 @@
                     <div class="card-body text-center">
                         <p class="titulo">
                             <strong>
-                                <?=$creator->fullName?>;
+                                <?=$creator->fullName?>
                             </strong>
                         </p>
                         <p>
