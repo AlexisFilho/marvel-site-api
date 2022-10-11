@@ -37,13 +37,13 @@
                             <a class="nav-link" href="personagens">PERSONAGENS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="filmes">FILMES</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="series">SÉRIES</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="quadrinhos">QUADRINHOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="historias">HISTÓRIAS</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="sagas">SAGAS</a>

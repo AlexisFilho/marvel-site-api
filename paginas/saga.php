@@ -35,7 +35,7 @@
         </font>
 
         <div class="row">
-        <?php
+            <?php
                 echo $arquivo = "http://gateway.marvel.com/v1/public/events/{$id}/characters".URL;
 
                 $dados = file_get_contents($arquivo);
@@ -47,21 +47,125 @@
                     $poster = $quadrinho->thumbnail;
                     $image = "{$poster->path}/standard_fantastic.{$poster->extension}";
             ?>
+            <div class="col-12 col-md-3">
+                <div class="card text-center">
+                    <img src="<?=$image?>" alt="">
+                    <p>
+                        <strong><?=$quadrinho->name?></strong>
+                    </p>
+                    <p>
+                        <a href="personagem/<?=$quadrinho->id?>" class="btn btn-warning">
+                            Detalhes
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <?php
+                }
+            ?>
+        </div>
+        
+        <font color="white">
+            <h2>Criadores:</h2>
+        </font>
+
+        <div class="row">
+            <?php
+                echo $arquivo = "http://gateway.marvel.com/v1/public/events/{$id}/creators".URL;
+
+                $dados = file_get_contents($arquivo);
+                $dados = json_decode($dados);
+
+                // echo $dados;
+
+                foreach($dados->data->results as $criador) {
+                    $poster = $criador->thumbnail;
+                    $image = "{$poster->path}/standard_fantastic.{$poster->extension}";
+            ?>
+            <div class="col-12 col-md-3">
+                <div class="card text-center">
+                    <img src="<?=$image?>" alt="">
+                    <p>
+                        <strong><?=$criador->fullName?></strong>
+                    </p>
+                    <p>
+                        <a href="criador/<?=$criador->id?>" class="btn btn-warning">
+                            Detalhes
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <?php
+                }
+            ?>
+        </div>
+        
+        <font color="white">
+            <h2>Quadrinhos:</h2>
+        </font>
+
+        <div class="row">
+            <?php
+                echo $arquivo = "http://gateway.marvel.com/v1/public/events/{$id}/comics".URL;
+
+                $dados = file_get_contents($arquivo);
+                $dados = json_decode($dados);
+
+                // echo $dados;
+
+                foreach($dados->data->results as $quadrinho) {
+                    $poster = $quadrinho->thumbnail;
+                    $image = "{$poster->path}/standard_fantastic.{$poster->extension}";
+            ?>
+            <div class="col-12 col-md-3">
+                <div class="card text-center">
+                    <img src="<?=$image?>" alt="">
+                    <p>
+                        <strong><?=$quadrinho->title?></strong>
+                    </p>
+                    <p>
+                        <a href="quadrinho/<?=$quadrinho->id?>" class="btn btn-warning">
+                            Detalhes
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <?php
+                }
+            ?>
+        </div>
+        
+        <font color="white">
+            <h2>Séries:</h2>
+        </font>
+
+        <div class="row">
+            <?php
+                echo $arquivo = "http://gateway.marvel.com/v1/public/events/{$id}/series".URL;
+
+                $dados = file_get_contents($arquivo);
+                $dados = json_decode($dados);
+
+                // echo $dados;
+
+                foreach($dados->data->results as $serie) {
+                    $poster = $serie->thumbnail;
+                    $image = "{$poster->path}/standard_fantastic.{$poster->extension}";
+            ?>
 
                     <div class="col-12 col-md-3">
                         <div class="card text-center">
                             <img src="<?=$image?>" alt="">
                             <p>
-                                <strong><?=$quadrinho->name?></strong>
+                                <strong><?=$serie->title?></strong>
                             </p>
                             <p>
-                                <a href="personagem/<?=$quadrinho->id?>" class="btn btn-warning">
+                                <a href="serie/<?=$serie->id?>" class="btn btn-warning">
                                     Detalhes
                                 </a>
                             </p>
                         </div>
                     </div>
-
             <?php
                 }
             ?>
