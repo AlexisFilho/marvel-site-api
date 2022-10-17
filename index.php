@@ -13,6 +13,7 @@
     <base href="http://localhost/marvel-site-api/">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slider.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-light">
@@ -41,9 +42,6 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="quadrinhos">QUADRINHOS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="historias">HISTÓRIAS</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="sagas">SAGAS</a>

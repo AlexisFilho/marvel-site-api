@@ -42,12 +42,17 @@
                 $dados = json_decode($dados);
 
                 // echo $dados;
+            ?>
 
+            <div class="slider">
+                <div class="slide-track">
+
+            <?php
                 foreach($dados->data->results as $quadrinho) {
                     $poster = $quadrinho->thumbnail;
                     $image = "{$poster->path}/standard_fantastic.{$poster->extension}";
             ?>
-            <div class="col-12 col-md-3">
+            <!-- <div class="col-12 col-md-3">
                 <div class="card text-center">
                     <img src="<?=$image?>" alt="">
                     <p>
@@ -59,10 +64,30 @@
                         </a>
                     </p>
                 </div>
-            </div>
+            </div> -->
+
+            
+            
+                    <div class="slide">
+                        <div class="card text-center">
+                            <img src="<?=$image?>" alt="">
+                            <p>
+                                <strong><?=$quadrinho->name?></strong>
+                            </p>
+                            <p>
+                                <a href="personagem/<?=$quadrinho->id?>" class="btn btn-warning">
+                                    Detalhes
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+
             <?php
                 }
             ?>
+
+                </div>
+            </div>
         </div>
         
         <font color="white">

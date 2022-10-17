@@ -9,6 +9,10 @@
         $dados = file_get_contents($arquivo);
         $dados = json_decode($dados);
 
+        if (!$dados) {
+            return include "erro.php";
+        }
+
         $results = $dados->data->results[0];
         $poster = $results->thumbnail;
         $image = "{$poster->path}/standard_fantastic.{$poster->extension}";
@@ -51,7 +55,7 @@
                 <div class="card text-center">
                     <img src="<?=$image?>" alt="">
                     <p>
-                        <strong><?=$personagem->title?></strong>
+                        <strong><?=$personagem->name?></strong>
                     </p>
                     <p>
                         <a href="personagem/<?=$personagem->id?>" class="btn btn-warning">
