@@ -1,11 +1,11 @@
-body {
+/* body {
     min-height: 100vh;
     display: grid;
     place-items: center;
-}
+} */
 
 .slider {
-    height: 250px;
+    height: 500px;
     margin: auto;
     position: relative;
     width: 90%;
@@ -16,10 +16,10 @@ body {
 
 .slide-track {
     display: flex;
-    width: calc(250px * 18);
-    animation: scroll 40s linear infinite;
-    height: 200px;
-    width: 250px;
+    width: calc(500px * 18);
+    animation: scroll 35s linear infinite;
+    height: 400px;
+    width: 500px;
     display: flex;
     align-items: center;
     padding: 15px;
@@ -32,16 +32,16 @@ body {
 
 @keyframes scroll {
     0% {
-        transform: translateX(0);
+        transform: translateX(-100px);
     }
     100% {
-        transform: translateX(calc(-250px * 9));
+        transform: translateX(calc(-500px * 10));
     }
 }
 
 .slide {
-    height: 200px;
-    width: 250px;
+    height: 400px;
+    width: 500px;
     display: flex;
     align-items: center;
     padding: 15px;
@@ -79,3 +79,13 @@ img:hover {
     top: 0;
     transform: rotateZ(180deg);
 }
+.card-slide {
+    width: 250px;
+    transition:1s;
+}
+
+.card-slide:hover{
+    transform: scale(1.15);
+    transition: 1s;
+}
+

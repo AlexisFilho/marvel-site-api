@@ -47,45 +47,24 @@
             <div class="slider">
                 <div class="slide-track">
 
-            <?php
-                foreach($dados->data->results as $quadrinho) {
-                    $poster = $quadrinho->thumbnail;
-                    $image = "{$poster->path}/standard_fantastic.{$poster->extension}";
-            ?>
-            <!-- <div class="col-12 col-md-3">
-                <div class="card text-center">
-                    <img src="<?=$image?>" alt="">
-                    <p>
-                        <strong><?=$quadrinho->name?></strong>
-                    </p>
-                    <p>
-                        <a href="personagem/<?=$quadrinho->id?>" class="btn btn-warning">
-                            Detalhes
-                        </a>
-                    </p>
-                </div>
-            </div> -->
+                    <?php
+                        foreach($dados->data->results as $quadrinho) {
+                            $poster = $quadrinho->thumbnail;
+                            $image = "{$poster->path}/standard_fantastic.{$poster->extension}";
+                    ?>
+                            <div class="slide">
+                                <div class="card card-slide text-center">
+                                    <a href=""></a>
+                                    <img src="<?=$image?>" alt="">
+                                    <p>
+                                        <strong><?=$quadrinho->name?></strong>
+                                    </p>
+                                </div>
+                            </div>
 
-            
-            
-                    <div class="slide">
-                        <div class="card text-center">
-                            <img src="<?=$image?>" alt="">
-                            <p>
-                                <strong><?=$quadrinho->name?></strong>
-                            </p>
-                            <p>
-                                <a href="personagem/<?=$quadrinho->id?>" class="btn btn-warning">
-                                    Detalhes
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-
-            <?php
-                }
-            ?>
-
+                    <?php
+                        }
+                    ?>
                 </div>
             </div>
         </div>
@@ -101,28 +80,32 @@
                 $dados = file_get_contents($arquivo);
                 $dados = json_decode($dados);
 
-                // echo $dados;
+                ?>
 
-                foreach($dados->data->results as $criador) {
-                    $poster = $criador->thumbnail;
-                    $image = "{$poster->path}/standard_fantastic.{$poster->extension}";
-            ?>
-            <div class="col-12 col-md-3">
-                <div class="card text-center">
-                    <img src="<?=$image?>" alt="">
-                    <p>
-                        <strong><?=$criador->fullName?></strong>
-                    </p>
-                    <p>
-                        <a href="criador/<?=$criador->id?>" class="btn btn-warning">
-                            Detalhes
-                        </a>
-                    </p>
+                <div class="slider">
+                    <div class="slide-track">
+
+                    <?php
+                        // echo $dados;
+                        foreach($dados->data->results as $criador) {
+                            $poster = $criador->thumbnail;
+                            $image = "{$poster->path}/standard_fantastic.{$poster->extension}";
+                    ?>
+                            <div class="slide">
+                                <div class="card card-slide text-center">
+                                    <a href=""></a>
+                                    <img src="<?=$image?>" alt="">
+                                    <p>
+                                        <strong><?=$criador->fullName?></strong>
+                                    </p>
+                                </div>
+                            </div>
+
+                    <?php
+                        }
+                    ?>
                 </div>
             </div>
-            <?php
-                }
-            ?>
         </div>
         
         <font color="white">
@@ -137,27 +120,31 @@
                 $dados = json_decode($dados);
 
                 // echo $dados;
+                ?>
 
-                foreach($dados->data->results as $quadrinho) {
-                    $poster = $quadrinho->thumbnail;
-                    $image = "{$poster->path}/standard_fantastic.{$poster->extension}";
-            ?>
-            <div class="col-12 col-md-3">
-                <div class="card text-center">
-                    <img src="<?=$image?>" alt="">
-                    <p>
-                        <strong><?=$quadrinho->title?></strong>
-                    </p>
-                    <p>
-                        <a href="quadrinho/<?=$quadrinho->id?>" class="btn btn-warning">
-                            Detalhes
-                        </a>
-                    </p>
+                <div class="slider">
+                    <div class="slide-track">
+
+                    <?php
+                        foreach($dados->data->results as $quadrinho) {
+                        $poster = $quadrinho->thumbnail;
+                        $image = "{$poster->path}/standard_fantastic.{$poster->extension}";
+                    ?>
+                        <div class="slide">
+                            <div class="card card-slide text-center">
+                                <a href=""></a>
+                                <img src="<?=$image?>" alt="">
+                                <p>
+                                    <strong><?=$quadrinho->name?></strong>
+                                </p>
+                            </div>
+                        </div>
+
+                    <?php
+                        }
+                    ?>
                 </div>
             </div>
-            <?php
-                }
-            ?>
         </div>
         
         <font color="white">
