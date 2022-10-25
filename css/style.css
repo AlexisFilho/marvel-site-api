@@ -6,7 +6,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    /* background: linear-gradient(#000000, #434343); */
+    background: black;
 }
 
 .login-box {
@@ -177,4 +177,78 @@ body {
 .card .titulo{
 
     height: 70px;
+}
+.sliderN{
+    align-items: center;
+    background: gray;
+}
+.sliderN .prev-arrow{
+    position: absolute;
+    margin-top: 125px;
+    left: 0px;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    background: red;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    display: inline-block;
+    cursor: pointer;
+    padding-top: 17px;
+    z-index: 5;
+}
+
+.sliderN .next-arrow{
+    position: absolute;
+    margin-top: 125px;
+    top: 0px;
+    right: 0px;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    background: red;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    display: inline-block;
+    cursor: pointer;
+    padding-top: 17px;
+}
+.sliderG .prev-arrow{
+    position: absolute;
+    margin-top: 250px;
+    left: 0px;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    background: red;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    display: inline-block;
+    cursor: pointer;
+    padding-top: 17px;
+    z-index: 5;
+}
+
+.sliderG .next-arrow{
+    position: absolute;
+    margin-top: 250px;
+    top: 0px;
+    right: 0px;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    background: red;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    display: inline-block;
+    cursor: pointer;
+    padding-top: 17px;
+}
+
+.backwhite {
+    background: white;
 }

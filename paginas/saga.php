@@ -1,3 +1,6 @@
+<link rel="stylesheet" type="text/css" href="css/slick.css">
+<link rel="stylesheet" href="css/slider.css">
+
 <?php
     $id = $param[1] ?? null;
 
@@ -11,7 +14,7 @@
 
         $results = $dados->data->results[0];
         $poster = $results->thumbnail;
-        $image = "{$poster->path}/standard_fantastic.{$poster->extension}";
+        $image = "{$poster->path}/portrait_uncanny.{$poster->extension}";
         ?>
 
         <div class="card">
@@ -43,30 +46,28 @@
 
                 // echo $dados;
             ?>
-
-            <div class="slider">
-                <div class="slide-track">
-
-                    <?php
-                        foreach($dados->data->results as $quadrinho) {
-                            $poster = $quadrinho->thumbnail;
-                            $image = "{$poster->path}/standard_fantastic.{$poster->extension}";
-                    ?>
-                            <div class="slide">
-                                <div class="card card-slide text-center">
-                                    <a href=""></a>
-                                    <img src="<?=$image?>" alt="">
-                                    <p>
-                                        <strong><?=$quadrinho->name?></strong>
-                                    </p>
-                                </div>
-                            </div>
-
-                    <?php
-                        }
-                    ?>
-                </div>
-            </div>
+            <ul class="sliderN">
+                <?php
+                    foreach($dados->data->results as $quadrinho) {
+                        $poster = $quadrinho->thumbnail;
+                        $image = "{$poster->path}/standard_fantastic.{$poster->extension}";
+                ?>
+                    <li>
+                        <div class="text-center">
+                            <a href="personagem/<?=$quadrinho->id?>">
+                                <img src="<?=$image?>" alt="">
+                            </a>
+                                
+                            <p>
+                                <strong><?=$quadrinho->name?></strong>
+                            </p>
+                        </div>
+                    </li>
+                <?php
+                    }
+                ?>
+                
+            </ul>
         </div>
         
         <font color="white">
@@ -79,33 +80,29 @@
 
                 $dados = file_get_contents($arquivo);
                 $dados = json_decode($dados);
-
+            ?>
+            <ul class="sliderG">
+                <?php
+                    // echo $dados;
+                    foreach($dados->data->results as $criador) {
+                        $poster = $criador->thumbnail;
+                        $image = "{$poster->path}/portrait_uncanny.{$poster->extension}";
                 ?>
-
-                <div class="slider">
-                    <div class="slide-track">
-
-                    <?php
-                        // echo $dados;
-                        foreach($dados->data->results as $criador) {
-                            $poster = $criador->thumbnail;
-                            $image = "{$poster->path}/standard_fantastic.{$poster->extension}";
-                    ?>
-                            <div class="slide">
-                                <div class="card card-slide text-center">
-                                    <a href=""></a>
-                                    <img src="<?=$image?>" alt="">
-                                    <p>
-                                        <strong><?=$criador->fullName?></strong>
-                                    </p>
-                                </div>
-                            </div>
-
-                    <?php
-                        }
-                    ?>
-                </div>
-            </div>
+                <li>
+                    <div class="text-center">
+                        <a href="criador/<?=$criador->id?>">
+                            <img src="<?=$image?>" alt="">
+                        </a>
+                        
+                        <p>
+                            <strong><?=$criador->fullName?></strong>
+                        </p>
+                    </div>
+                </li>
+                <?php
+                    }
+                ?>
+            </ul>
         </div>
         
         <font color="white">
@@ -120,31 +117,29 @@
                 $dados = json_decode($dados);
 
                 // echo $dados;
+            ?>
+
+            <ul class="sliderG">
+                <?php
+                    foreach($dados->data->results as $quadrinho) {
+                    $poster = $quadrinho->thumbnail;
+                    $image = "{$poster->path}/portrait_uncanny.{$poster->extension}";
                 ?>
-
-                <div class="slider">
-                    <div class="slide-track">
-
-                    <?php
-                        foreach($dados->data->results as $quadrinho) {
-                        $poster = $quadrinho->thumbnail;
-                        $image = "{$poster->path}/standard_fantastic.{$poster->extension}";
-                    ?>
-                        <div class="slide">
-                            <div class="card card-slide text-center">
-                                <a href=""></a>
-                                <img src="<?=$image?>" alt="">
-                                <p>
-                                    <strong><?=$quadrinho->name?></strong>
-                                </p>
-                            </div>
-                        </div>
-
-                    <?php
-                        }
-                    ?>
-                </div>
-            </div>
+                <li>
+                    <div class="text-center">
+                        <a href="quadrinho/<?=$quadrinho->id?>">
+                            <img src="<?=$image?>" alt="">
+                        </a>
+                        
+                        <p>
+                            <strong><?=$quadrinho->title?></strong>
+                        </p>
+                    </div>
+                </li>
+                <?php
+                    }
+                ?>
+            </ul>
         </div>
         
         <font color="white">
@@ -157,32 +152,35 @@
 
                 $dados = file_get_contents($arquivo);
                 $dados = json_decode($dados);
-
+                
                 // echo $dados;
-
-                foreach($dados->data->results as $serie) {
+            ?>
+            <ul class=sliderG>
+                <?php
+                    foreach($dados->data->results as $serie) {
                     $poster = $serie->thumbnail;
-                    $image = "{$poster->path}/standard_fantastic.{$poster->extension}";
-            ?>
-
-                    <div class="col-12 col-md-3">
-                        <div class="card text-center">
+                    $image = "{$poster->path}/portrait_uncanny.{$poster->extension}";
+                ?>
+                <li>
+                    <div class="text-center">
+                        <a href="serie/<?=$serie->id?>">
                             <img src="<?=$image?>" alt="">
-                            <p>
-                                <strong><?=$serie->title?></strong>
-                            </p>
-                            <p>
-                                <a href="serie/<?=$serie->id?>" class="btn btn-warning">
-                                    Detalhes
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-            <?php
-                }
-            ?>
-        </div>
+                        </a>
 
-        <?php
+                        <p>
+                            <strong><?=$serie->title?></strong>
+                        </p>
+                    </div>
+                </li>
+                <?php
+                    }
+                ?>
+            </ul>
+        </div>
+    <?php
     }
 ?>
+
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<script type = "text/javascript" src="js/slick.min.js"></script>
+<script type="text/javascript" src="js/cusSlick.js"></script>
