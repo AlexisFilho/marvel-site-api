@@ -1,3 +1,6 @@
+<link rel="stylesheet" type="text/css" href="css/slick.css">
+<link rel="stylesheet" href="css/slider.css">
+
 <?php
     $id = $param[1] ?? null;
 
@@ -21,7 +24,6 @@
         
         // echo $results;
         ?>
-
         <div class="card">
             <div class="row">
                 <div class="col-12 col-md-3">
@@ -46,27 +48,30 @@
                 $dados = json_decode($dados);
 
                 // echo $dados;
-
-                foreach($dados->data->results as $quadrinho) {
-                    $poster = $quadrinho->thumbnail;
-                    $image = "{$poster->path}/standard_fantastic.{$poster->extension}";
             ?>
-            <div class="col-12 col-md-3">
-                <div class="card text-center">
-                    <img src="<?=$image?>" alt="">
-                    <p>
-                        <strong><?=$quadrinho->title?></strong>
-                    </p>
-                    <p>
-                        <a href="quadrinho/<?=$quadrinho->id?>" class="btn btn-warning">
-                            Ver quadrinho
-                        </a>
-                    </p>
-                </div>
-            </div>
-            <?php
-                }
-            ?>
+            <ul class="sliderG">
+                <?php
+                    foreach($dados->data->results as $quadrinho) {
+                        $poster = $quadrinho->thumbnail;
+                        $image = "{$poster->path}/portrait_uncanny.{$poster->extension}";
+                ?>
+                    <li>
+                        <div class="card text-center y">
+                            <img src="<?=$image?>" alt="">
+                            <p>
+                                <strong><?=$quadrinho->title?></strong>
+                            </p>
+                            <p>
+                                <a href="quadrinho/<?=$quadrinho->id?>" class="btn btn-warning">
+                                    Ver quadrinho
+                                </a>
+                            </p>
+                        </div>
+                    </li>
+                <?php
+                    }
+                ?>
+            </ul>
         </div>
 
         <font color="white">
@@ -81,27 +86,30 @@
                 $dados = json_decode($dados);
 
                 // echo $dados;
-
-                foreach($dados->data->results as $serie) {
-                    $poster = $serie->thumbnail;
-                    $image = "{$poster->path}/standard_fantastic.{$poster->extension}";
             ?>
-            <div class="col-12 col-md-3">
-                <div class="card text-center">
-                    <img src="<?=$image?>" alt="">
-                    <p>
-                        <strong><?=$serie->title?></strong>
-                    </p>
-                    <p>
-                        <a href="serie/<?=$serie->id?>" class="btn btn-warning">
-                            Ver série
-                        </a>
-                    </p>
-                </div>
-            </div>
-            <?php
-                }
-            ?>
+            <ul class="sliderG">
+                <?php
+                    foreach($dados->data->results as $serie) {
+                        $poster = $serie->thumbnail;
+                        $image = "{$poster->path}/portrait_uncanny.{$poster->extension}";
+                ?>
+                    <li>
+                        <div class="card text-center y">
+                            <img src="<?=$image?>" alt="">
+                            <p>
+                                <strong><?=$serie->title?></strong>
+                            </p>
+                            <p>
+                                <a href="serie/<?=$serie->id?>" class="btn btn-warning">
+                                    Ver série
+                                </a>
+                            </p>
+                        </div>
+                    </li>
+                <?php
+                    }
+                ?>
+            </ul>
         </div>
 
         <font color="white">
@@ -119,10 +127,10 @@
 
                 foreach($dados->data->results as $saga) {
                     $poster = $saga->thumbnail;
-                    $image = "{$poster->path}/standard_fantastic.{$poster->extension}";
+                    $image = "{$poster->path}/portrait_uncanny.{$poster->extension}";
             ?>
             <div class="col-12 col-md-3">
-                <div class="card text-center">
+                <div class="card text-center y">
                     <img src="<?=$image?>" alt="">
                     <p>
                         <strong><?=$saga->title?></strong>
@@ -142,3 +150,7 @@
         <?php
     }
 ?>
+
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<script type = "text/javascript" src="js/slick.min.js"></script>
+<script type="text/javascript" src="js/cusSlick.js"></script>

@@ -1,3 +1,6 @@
+<link rel="stylesheet" type="text/css" href="css/slick.css">
+<link rel="stylesheet" href="css/slider.css">
+
 <?php
     $id = $param[1] ?? null;
 
@@ -15,7 +18,7 @@
         
         $results = $dados->data->results[0];
         $poster = $results->thumbnail;
-        $image = "{$poster->path}/standard_fantastic.{$poster->extension}";
+        $image = "{$poster->path}/portrait_uncanny.{$poster->extension}";
         ?>
 
         <div class="card">
@@ -42,29 +45,25 @@
                 $dados = json_decode($dados);
 
                 // echo $dados;
-
-                foreach($dados->data->results as $creator) {
-                    $poster = $creator->thumbnail;
-                    $image = "{$poster->path}/standard_fantastic.{$poster->extension}";
             ?>
-
-                    <div class="col-12 col-md-3">
-                        <div class="card text-center">
+            <ul class="sliderG">
+                <?php
+                    foreach($dados->data->results as $creator) {
+                        $poster = $creator->thumbnail;
+                        $image = "{$poster->path}/portrait_uncanny.{$poster->extension}";
+                ?>
+                    <li>
+                        <div class="text-center y">
                             <img src="<?=$image?>" alt="<?=$creator->name?>">
                             <p>
                                 <strong><?=$creator->fullName?></strong>
                             </p>
-                            <p>
-                                <a href="criador/<?=$creator->id?>" class="btn btn-warning">
-                                    Ver personagem
-                                </a>
-                            </p>
                         </div>
-                    </div>
-
-            <?php
-                }
-            ?>
+                    </li>
+                <?php
+                    }
+                ?>
+            </ul>
         </div>
 
         <font color="white">
@@ -79,29 +78,25 @@
                 $dados = json_decode($dados);
 
                 // echo $dados;
-
-                foreach($dados->data->results as $character) {
-                    $poster = $character->thumbnail;
-                    $image = "{$poster->path}/standard_fantastic.{$poster->extension}";
             ?>
-
-                    <div class="col-12 col-md-3">
-                        <div class="card text-center">
+            <ul class="sliderN">
+                <?php
+                    foreach($dados->data->results as $character) {
+                        $poster = $character->thumbnail;
+                        $image = "{$poster->path}/standard_fantastic.{$poster->extension}";
+                ?>
+                    <li>
+                        <div class="text-center y">
                             <img src="<?=$image?>" alt="<?=$character->name?>">
                             <p>
                                 <strong><?=$character->name?></strong>
                             </p>
-                            <p>
-                                <a href="personagem/<?=$character->id?>" class="btn btn-warning">
-                                    Ver personagem
-                                </a>
-                            </p>
                         </div>
-                    </div>
-
-            <?php
-                }
-            ?>
+                    </li>
+                <?php
+                    }
+                ?>
+            </ul>
         </div>
 
         <font color="white">
@@ -116,29 +111,31 @@
                 $dados = json_decode($dados);
 
                 // echo $dados;
-
-                foreach($dados->data->results as $comic) {
-                    $poster = $comic->thumbnail;
-                    $image = "{$poster->path}/standard_fantastic.{$poster->extension}";
             ?>
-            <div class="col-12 col-md-3">
-                <div class="card text-center">
-                    <img src="<?=$image?>" alt="<?=$comic->name?>">
-                    <p>
-                        <strong><?=$comic->name?></strong>
-                    </p>
-                    <p>
-                        <a href="quadrinho/<?=$comic->id?>" class="btn btn-warning">
-                            Ver personagem
-                        </a>
-                    </p>
-                </div>
-            </div>
-            <?php
-                }
-            ?>
+            <ul class="sliderG">
+                <?php
+                    foreach($dados->data->results as $comic) {
+                        $poster = $comic->thumbnail;
+                        $image = "{$poster->path}/portrait_uncanny.{$poster->extension}";
+                ?>
+                    <li>
+                        <div class="text-center y">
+                            <img src="<?=$image?>" alt="<?=$comic->name?>">
+                            <p>
+                                <strong><?=$comic->title?></strong>
+                            </p>
+                        </div>
+                    </li>
+                <?php
+                    }
+                ?>
+            </ul>
         </div>
 
         <?php
     }
 ?>
+
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<script type = "text/javascript" src="js/slick.min.js"></script>
+<script type="text/javascript" src="js/cusSlick.js"></script>

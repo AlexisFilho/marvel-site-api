@@ -6,7 +6,7 @@
 
         foreach($dados->data->results as $serie) {
             $poster = $serie->thumbnail;
-            $image = "{$poster->path}/standard_fantastic.{$poster->extension}"
+            $image = "{$poster->path}/portrait_uncanny.{$poster->extension}"
             ?>
 
             <div class="col-12 col-md-3">

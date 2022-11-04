@@ -17,7 +17,7 @@
         $image = "{$poster->path}/portrait_uncanny.{$poster->extension}";
         ?>
 
-        <div class="card">
+        <div class="card s">
             <div class="row">
                 <div class="col-12 col-md-3">
                     <img src="<?=$image?>" alt="<?=$results->title?>">
@@ -53,7 +53,7 @@
                         $image = "{$poster->path}/standard_fantastic.{$poster->extension}";
                 ?>
                     <li>
-                        <div class="text-center">
+                        <div class="text-center y">
                             <a href="personagem/<?=$quadrinho->id?>">
                                 <img src="<?=$image?>" alt="">
                             </a>
@@ -66,7 +66,6 @@
                 <?php
                     }
                 ?>
-                
             </ul>
         </div>
         

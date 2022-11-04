@@ -6,7 +6,7 @@
 
         foreach($dados->data->results as $events) {
             $poster = $events->thumbnail;
-            $image = "{$poster->path}.{$poster->extension}"
+            $image = "{$poster->path}/portrait_uncanny.{$poster->extension}"
             ?>
 
             <div class="col-12 col-md-3">

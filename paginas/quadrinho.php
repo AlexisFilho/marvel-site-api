@@ -84,7 +84,7 @@
 
                 foreach($dados->data->results as $criador) {
                     $poster = $criador->thumbnail;
-                    $image = "{$poster->path}/standard_fantastic.{$poster->extension}";
+                    $image = "{$poster->path}/portrait_uncanny.{$poster->extension}";
             ?>
             <div class="col-12 col-md-3">
                 <div class="card text-center">

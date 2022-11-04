@@ -10,7 +10,7 @@
     foreach($dados->data->results as $quadrinho){
         $image = $quadrinho->thumbnail->path;
         $extension = $quadrinho->thumbnail->extension;
-        $cover = $image."/standard_fantastic.".$extension;
+        $cover = $image."/portrait_uncanny.".$extension;
         ?>
             <div class="col-12 col-md-3">
                 <div class="card">

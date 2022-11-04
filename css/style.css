@@ -169,7 +169,11 @@ body {
         bottom: 100%;
     }
 }
-
+.card{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 0px;
+}
 .logo{
     width: 100px !important;
 }
@@ -251,4 +255,11 @@ body {
 
 .backwhite {
     background: white;
+}
+main{
+    padding-top: 35px;
+}
+.y{
+    margin-left: 5px;
+    margin-right: 5px;
 }
