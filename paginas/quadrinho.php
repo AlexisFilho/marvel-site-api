@@ -125,20 +125,20 @@
 
                 // echo $dados;
             ?>
-            <ul>
+            <ul class="sliderG">
                 <?php
                     foreach($dados->data->results as $saga) {
                         $poster = $saga->thumbnail;
-                        $image = "{$poster->path}/standard_fantastic.{$poster->extension}";
+                        $image = "{$poster->path}/portrait_uncanny.{$poster->extension}";
                 ?>
                     <li>
-                        <div class="card text-center">
+                        <div class="card text-center y">
                             <a href="saga/<?=$saga->id?>">
                                 <div class="dcard">
                                     <img src="<?=$image?>" class="cardimg">
                                 </div>
                                 <p>
-                                    <strong><?=$saga->fullName?></strong>
+                                    <strong><?=$saga->title?></strong>
                                 </p>
                             </a>
                         </div>

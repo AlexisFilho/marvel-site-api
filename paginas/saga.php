@@ -95,9 +95,11 @@
                             <div class="dcard">
                                 <img src="<?=$image?>" class="cardimg">
                             </div>
-                            <p>
-                                <strong><?=$criador->fullName?></strong>
-                            </p>
+                            <div class="card-body text-center">
+                                <p>
+                                    <strong><?=$criador->fullName?></strong>
+                                </p>
+                            </div>
                         </a>
                     </div>
                 </li>
