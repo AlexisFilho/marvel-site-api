@@ -1,5 +1,6 @@
 <link rel="stylesheet" type="text/css" href="css/slick.css">
 <link rel="stylesheet" href="css/slider.css">
+<link rel="stylesheet" href="css/style.css">
 
 <?php
     $id = $param[1] ?? null;
@@ -33,7 +34,7 @@
             </div>
         </div>
 
-        <font color="white">
+        <font color="black">
             <h2>Criadores:</h2>
         </font>
 
@@ -53,11 +54,15 @@
                         $image = "{$poster->path}/portrait_uncanny.{$poster->extension}";
                 ?>
                     <li>
-                        <div class="text-center y">
-                            <img src="<?=$image?>" alt="<?=$creator->name?>">
-                            <p>
-                                <strong><?=$creator->fullName?></strong>
-                            </p>
+                        <div class="card text-center y">
+                            <a href="criador/<?=$creator->id?>">
+                                <div class="dcard">
+                                    <img src="<?=$image?>" class="cardimg" alt="<?=$creator->name?>">
+                                </div>
+                                <p>
+                                    <strong><?=$creator->fullName?></strong>
+                                </p>
+                            </a>
                         </div>
                     </li>
                 <?php
@@ -66,7 +71,7 @@
             </ul>
         </div>
 
-        <font color="white">
+        <font color="black">
             <h2>Personagens:</h2>
         </font>
 
@@ -86,11 +91,15 @@
                         $image = "{$poster->path}/standard_fantastic.{$poster->extension}";
                 ?>
                     <li>
-                        <div class="text-center y">
-                            <img src="<?=$image?>" alt="<?=$character->name?>">
-                            <p>
-                                <strong><?=$character->name?></strong>
-                            </p>
+                        <div class="card text-center y">
+                            <a href="personagem/<?=$character->id?>">
+                                <div class="dcard">
+                                    <img src="<?=$image?>" class="cardimg" alt="<?=$character->name?>">
+                                </div>
+                                <p>
+                                    <strong><?=$character->name?></strong>
+                                </p>
+                            </a>
                         </div>
                     </li>
                 <?php
@@ -99,7 +108,7 @@
             </ul>
         </div>
 
-        <font color="white">
+        <font color="black">
             <h2>Quadrinhos:</h2>
         </font>
 
@@ -119,11 +128,15 @@
                         $image = "{$poster->path}/portrait_uncanny.{$poster->extension}";
                 ?>
                     <li>
-                        <div class="text-center y">
-                            <img src="<?=$image?>" alt="<?=$comic->name?>">
-                            <p>
-                                <strong><?=$comic->title?></strong>
-                            </p>
+                        <div class="card text-center y">
+                            <a href="quadrinho/<?=$comic->id?>">
+                                <div class="dcard">
+                                    <img src="<?=$image?>" class="cardimg" alt="<?=$comic->title?>">
+                                </div>
+                                <p>
+                                    <strong><?=$comic->title?></strong>
+                                </p>
+                            </a>
                         </div>
                     </li>
                 <?php

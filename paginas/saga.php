@@ -1,5 +1,6 @@
 <link rel="stylesheet" type="text/css" href="css/slick.css">
 <link rel="stylesheet" href="css/slider.css">
+<link rel="stylesheet" href="css/style.css">
 
 <?php
     $id = $param[1] ?? null;
@@ -53,14 +54,15 @@
                         $image = "{$poster->path}/standard_fantastic.{$poster->extension}";
                 ?>
                     <li>
-                        <div class="text-center y">
+                        <div class="card text-center y">
                             <a href="personagem/<?=$quadrinho->id?>">
-                                <img src="<?=$image?>" alt="">
+                                <div class="dcard">
+                                    <img src="<?=$image?>" class="cardimg">
+                                </div>
+                                <p>
+                                    <strong><?=$quadrinho->name?></strong>
+                                </p>
                             </a>
-                                
-                            <p>
-                                <strong><?=$quadrinho->name?></strong>
-                            </p>
                         </div>
                     </li>
                 <?php
@@ -88,14 +90,15 @@
                         $image = "{$poster->path}/portrait_uncanny.{$poster->extension}";
                 ?>
                 <li>
-                    <div class="text-center">
+                    <div class="card text-center y">
                         <a href="criador/<?=$criador->id?>">
-                            <img src="<?=$image?>" alt="">
+                            <div class="dcard">
+                                <img src="<?=$image?>" class="cardimg">
+                            </div>
+                            <p>
+                                <strong><?=$criador->fullName?></strong>
+                            </p>
                         </a>
-                        
-                        <p>
-                            <strong><?=$criador->fullName?></strong>
-                        </p>
                     </div>
                 </li>
                 <?php
@@ -125,14 +128,15 @@
                     $image = "{$poster->path}/portrait_uncanny.{$poster->extension}";
                 ?>
                 <li>
-                    <div class="text-center">
+                    <div class="card text-center y">
                         <a href="quadrinho/<?=$quadrinho->id?>">
-                            <img src="<?=$image?>" alt="">
+                            <div class="dcard">
+                                <img src="<?=$image?>" class="cardimg">
+                            </div>
+                            <p>
+                                <strong><?=$quadrinho->title?></strong>
+                            </p>
                         </a>
-                        
-                        <p>
-                            <strong><?=$quadrinho->title?></strong>
-                        </p>
                     </div>
                 </li>
                 <?php
@@ -161,14 +165,15 @@
                     $image = "{$poster->path}/portrait_uncanny.{$poster->extension}";
                 ?>
                 <li>
-                    <div class="text-center">
+                    <div class="card text-center y">
                         <a href="serie/<?=$serie->id?>">
-                            <img src="<?=$image?>" alt="">
+                            <div class="dcard">
+                                <img src="<?=$image?>" class="cardimg">
+                            </div>
+                            <p>
+                                <strong><?=$serie->title?></strong>
+                            </p>
                         </a>
-
-                        <p>
-                            <strong><?=$serie->title?></strong>
-                        </p>
                     </div>
                 </li>
                 <?php

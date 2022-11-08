@@ -1,5 +1,6 @@
 <link rel="stylesheet" type="text/css" href="css/slick.css">
 <link rel="stylesheet" href="css/slider.css">
+<link rel="stylesheet" href="css/style.css">
 
 <?php
     $id = $param[1] ?? null;
@@ -36,7 +37,7 @@
             </div>
         </div>
 
-        <font color="white">
+        <font color="black">
             <h2>Quadrinhos que participou:</h2>
         </font>
 
@@ -57,15 +58,14 @@
                 ?>
                     <li>
                         <div class="card text-center y">
-                            <img src="<?=$image?>" alt="">
-                            <p>
-                                <strong><?=$quadrinho->title?></strong>
-                            </p>
-                            <p>
-                                <a href="quadrinho/<?=$quadrinho->id?>" class="btn btn-warning">
-                                    Ver quadrinho
-                                </a>
-                            </p>
+                            <a href="quadrinho/<?=$quadrinho->id?>">
+                                <div class="dcard">
+                                    <img src="<?=$image?>" class="cardimg">
+                                </div>
+                                <p>
+                                    <strong><?=$quadrinho->title?></strong>
+                                </p>
+                            </a>
                         </div>
                     </li>
                 <?php
@@ -74,7 +74,7 @@
             </ul>
         </div>
 
-        <font color="white">
+        <font color="black">
             <h2>Séries que participou:</h2>
         </font>
 
@@ -95,15 +95,14 @@
                 ?>
                     <li>
                         <div class="card text-center y">
-                            <img src="<?=$image?>" alt="">
-                            <p>
-                                <strong><?=$serie->title?></strong>
-                            </p>
-                            <p>
-                                <a href="serie/<?=$serie->id?>" class="btn btn-warning">
-                                    Ver série
-                                </a>
-                            </p>
+                            <a href="serie/<?=$serie->id?>">
+                                <div class="dcard">
+                                    <img src="<?=$image?>" class="cardimg">
+                                </div>
+                                <p>
+                                    <strong><?=$serie->title?></strong>
+                                </p>
+                            </a>
                         </div>
                     </li>
                 <?php
@@ -112,7 +111,7 @@
             </ul>
         </div>
 
-        <font color="white">
+        <font color="black">
             <h2>Sagas que participou:</h2>
         </font>
 
@@ -124,27 +123,29 @@
                 $dados = json_decode($dados);
 
                 // echo $dados;
-
-                foreach($dados->data->results as $saga) {
-                    $poster = $saga->thumbnail;
-                    $image = "{$poster->path}/portrait_uncanny.{$poster->extension}";
             ?>
-            <div class="col-12 col-md-3">
-                <div class="card text-center y">
-                    <img src="<?=$image?>" alt="">
-                    <p>
-                        <strong><?=$saga->title?></strong>
-                    </p>
-                    <p>
-                        <a href="saga/<?=$saga->id?>" class="btn btn-warning">
-                            Ver saga
-                        </a>
-                    </p>
-                </div>
-            </div>
-            <?php
-                }
-            ?>
+            <ul class="sliderG">
+                <?php
+                    foreach($dados->data->results as $saga) {
+                        $poster = $saga->thumbnail;
+                        $image = "{$poster->path}/portrait_uncanny.{$poster->extension}";
+                ?>
+                    <li>
+                        <div class="card text-center y">
+                            <a href="saga/<?=$saga->id?>">
+                                <div class="dcard">
+                                    <img src="<?=$image?>" class="cardimg">
+                                </div>
+                                <p>
+                                    <strong><?=$saga->title?></strong>
+                                </p>
+                            </a>
+                        </div>
+                    </li>
+                <?php
+                    }
+                ?>
+            </ul>
         </div>
 
         <?php

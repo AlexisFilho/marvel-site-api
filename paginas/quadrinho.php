@@ -1,3 +1,7 @@
+<link rel="stylesheet" type="text/css" href="css/slick.css">
+<link rel="stylesheet" href="css/slider.css">
+<link rel="stylesheet" href="css/style.css">
+
 <?php
     $id = $param[1] ?? null;
 
@@ -15,7 +19,7 @@
 
         $results = $dados->data->results[0];
         $poster = $results->thumbnail;
-        $image = "{$poster->path}/standard_fantastic.{$poster->extension}";
+        $image = "{$poster->path}/portrait_uncanny.{$poster->extension}";
 
         // $description = getDescriptionFromCharacter($results->id);
         
@@ -34,7 +38,7 @@
             </div>
         </div>
 
-        <font color="white">
+        <font color="black">
             <h2>Personagens:</h2>
         </font>
 
@@ -44,32 +48,34 @@
 
                 $dados = file_get_contents($arquivo);
                 $dados = json_decode($dados);
-
+            
                 // echo $dados;
-
-                foreach($dados->data->results as $personagem) {
-                    $poster = $personagem->thumbnail;
-                    $image = "{$poster->path}/standard_fantastic.{$poster->extension}";
             ?>
-            <div class="col-12 col-md-3">
-                <div class="card text-center">
-                    <img src="<?=$image?>" alt="">
-                    <p>
-                        <strong><?=$personagem->name?></strong>
-                    </p>
-                    <p>
-                        <a href="personagem/<?=$personagem->id?>" class="btn btn-warning">
-                            Ver mais
-                        </a>
-                    </p>
-                </div>
-            </div>
-            <?php
-                }
-            ?>
+            <ul class="sliderN">
+                <?php
+                    foreach($dados->data->results as $personagem) {
+                        $poster = $personagem->thumbnail;
+                        $image = "{$poster->path}/standard_fantastic.{$poster->extension}";
+                ?>
+                    <li>
+                        <div class="card text-center y">
+                            <a href="personagem/<?=$personagem->id?>">
+                                <div class="dcard">
+                                    <img src="<?=$image?>" class="cardimg">
+                                </div>
+                                <p>
+                                    <strong><?=$personagem->name?></strong>
+                                </p>
+                            </a>
+                        </div>
+                    </li>
+                <?php
+                    }
+                ?>
+            </ul>
         </div>
 
-        <font color="white">
+        <font color="black">
             <h2>Criadores:</h2>
         </font>
 
@@ -81,30 +87,32 @@
                 $dados = json_decode($dados);
 
                 // echo $dados;
-
-                foreach($dados->data->results as $criador) {
-                    $poster = $criador->thumbnail;
-                    $image = "{$poster->path}/portrait_uncanny.{$poster->extension}";
             ?>
-            <div class="col-12 col-md-3">
-                <div class="card text-center">
-                    <img src="<?=$image?>" alt="">
-                    <p>
-                        <strong><?=$criador->fullName?></strong>
-                    </p>
-                    <p>
-                        <a href="criador/<?=$criador->id?>" class="btn btn-warning">
-                            Ver mais
-                        </a>
-                    </p>
-                </div>
-            </div>
-            <?php
-                }
-            ?>
+            <ul class="sliderG">
+                <?php
+                    foreach($dados->data->results as $criador) {
+                        $poster = $criador->thumbnail;
+                        $image = "{$poster->path}/portrait_uncanny.{$poster->extension}";
+                ?>
+                    <li>
+                        <div class="card text-center y">
+                            <a href="criador/<?=$criador->id?>">
+                                <div class="dcard">
+                                    <img src="<?=$image?>" class="cardimg">
+                                </div>
+                                <p>
+                                    <strong><?=$criador->fullName?></strong>
+                                </p>
+                            </a>
+                        </div>
+                    </li>
+                <?php
+                    }
+                ?>
+            </ul>
         </div>
 
-        <font color="white">
+        <font color="black">
             <h2>Sagas:</h2>
         </font>
 
@@ -116,29 +124,35 @@
                 $dados = json_decode($dados);
 
                 // echo $dados;
-
-                foreach($dados->data->results as $saga) {
-                    $poster = $saga->thumbnail;
-                    $image = "{$poster->path}/standard_fantastic.{$poster->extension}";
             ?>
-            <div class="col-12 col-md-3">
-                <div class="card text-center">
-                    <img src="<?=$image?>" alt="">
-                    <p>
-                        <strong><?=$saga->fullName?></strong>
-                    </p>
-                    <p>
-                        <a href="saga/<?=$saga->id?>" class="btn btn-warning">
-                            Ver mais
-                        </a>
-                    </p>
-                </div>
-            </div>
-            <?php
-                }
-            ?>
+            <ul>
+                <?php
+                    foreach($dados->data->results as $saga) {
+                        $poster = $saga->thumbnail;
+                        $image = "{$poster->path}/standard_fantastic.{$poster->extension}";
+                ?>
+                    <li>
+                        <div class="card text-center">
+                            <a href="saga/<?=$saga->id?>">
+                                <div class="dcard">
+                                    <img src="<?=$image?>" class="cardimg">
+                                </div>
+                                <p>
+                                    <strong><?=$saga->fullName?></strong>
+                                </p>
+                            </a>
+                        </div>
+                    </li>
+                <?php
+                    }
+                ?>
+            </ul>
         </div>
 
         <?php
     }
 ?>
+
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<script type = "text/javascript" src="js/slick.min.js"></script>
+<script type="text/javascript" src="js/cusSlick.js"></script>
