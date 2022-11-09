@@ -8,7 +8,7 @@
     if ( empty($id) ) {
         include "erro.php";
     } else {
-        echo $arquivo = "https://gateway.marvel.com:443/v1/public/characters/{$id}".URL;
+        $arquivo = "https://gateway.marvel.com:443/v1/public/characters/{$id}".URL;
         
         $dados = file_get_contents($arquivo);
         $dados = json_decode($dados);
@@ -37,14 +37,17 @@
                 </div>
             </div>
         </div>
-        
-        <font color="black">
+
+        <br>
+        <br>
+
+        <font color="white">
             <h2>Quadrinhos que participou:</h2>
         </font>
 
         <div class="row">
             <?php
-                echo $arquivo = "http://gateway.marvel.com/v1/public/characters/{$id}/comics".URL;
+                $arquivo = "http://gateway.marvel.com/v1/public/characters/{$id}/comics".URL;
 
                 $dados = file_get_contents($arquivo);
                 $dados = json_decode($dados);
@@ -55,10 +58,10 @@
                 <?php
                     foreach($dados->data->results as $quadrinho) {
                         $poster = $quadrinho->thumbnail;
-                        $image = "{$poster->path}/portrait_uncanny.{$poster->extension}";
+                        $image = "{$poster->path}/portrait_incredible.{$poster->extension}";
                 ?>
                     <li>
-                        <div class="card text-center y">
+                        <div class="card text-center y z">
                             <a href="quadrinho/<?=$quadrinho->id?>">
                                 <div class="dcard">
                                     <img src="<?=$image?>" class="cardimg">
@@ -74,14 +77,17 @@
                 ?>
             </ul>
         </div>
+        
+        <br>
+        <br>
 
-        <font color="black">
-            <h2 color="white">Séries que participou:</h2>
+        <font color="white">
+            <h2>Séries que participou:</h2>
         </font>
 
         <div class="row">
             <?php
-                echo $arquivo = "http://gateway.marvel.com/v1/public/characters/{$id}/series".URL;
+                $arquivo = "http://gateway.marvel.com/v1/public/characters/{$id}/series".URL;
 
                 $dados = file_get_contents($arquivo);
                 $dados = json_decode($dados);
@@ -95,12 +101,12 @@
                         $image = "{$poster->path}/portrait_uncanny.{$poster->extension}";
                 ?>
                     <li>
-                        <div class="card text-center y">
+                        <div class="card text-center y z">
                             <a href="serie/<?=$serie->id?>">
                                 <div class="dcard">
                                     <img src="<?=$image?>" class="cardimg">
                                 </div>
-                                <p>
+                                <p class="text-center">
                                     <strong><?=$serie->title?></strong>
                                 </p>
                             </a>
@@ -111,14 +117,17 @@
                 ?>
             </ul>
         </div>
+        
+        <br>
+        <br>
 
-        <font color="black">
-            <h2 color="white">Sagas que participou:</h2>
+        <font color="white">
+            <h2>Sagas que participou:</h2>
         </font>
 
         <div class="row">
             <?php
-                echo $arquivo = "http://gateway.marvel.com/v1/public/characters/{$id}/events".URL;
+                $arquivo = "http://gateway.marvel.com/v1/public/characters/{$id}/events".URL;
 
                 $dados = file_get_contents($arquivo);
                 $dados = json_decode($dados);
@@ -129,10 +138,10 @@
                 <?php
                     foreach($dados->data->results as $saga) {
                         $poster = $saga->thumbnail;
-                        $image = "{$poster->path}/portrait_uncanny.{$poster->extension}";
+                        $image = "{$poster->path}/portrait_incredible.{$poster->extension}";
                 ?>
                     <li>
-                        <div class="card text-center y">
+                        <div class="card text-center y z">
                             <a href="saga/<?=$saga->id?>">
                                 <div class="dcard">
                                     <img src="<?=$image?>" class="cardimg">

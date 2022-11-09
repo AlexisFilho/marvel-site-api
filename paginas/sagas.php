@@ -1,3 +1,9 @@
+<link rel="stylesheet" href="css/style.css">
+
+<font color="white">
+    <h1>Sagas:</h1>
+</font>
+
 <div class="row">
     <?php
         $arquivo = "https://gateway.marvel.com:443/v1/public/events".URL;

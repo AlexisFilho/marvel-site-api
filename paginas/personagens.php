@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="css/style.css">
+
 <div class="row">
     <?php
         $arquivo = "https://gateway.marvel.com:443/v1/public/characters".URL;
@@ -10,20 +12,17 @@
             ?>
 
             <div class="col-12 col-md-3">
-                <div class="card">
-                    <img src="<?=$image?>" alt="<?=$character->title?>">
-                    <div class="card-body text-center">
+                <div class="card text-center y">
+                    <a href="personagem/<?=$character->id?>">
+                        <div class="dcard">
+                            <img src="<?=$image?>" alt="<?=$character->title?>" class="cardimg">
+                        </div>
                         <p class="titulo">
                             <strong>
                                 <?=$character->name?>
                             </strong>
                         </p>
-                        <p>
-                            <a href="personagem/<?=$character->id?>" class="btn btn-warning">
-                                Detalhes
-                            </a>
-                        </p>
-                    </div>
+                    </a>
                 </div>
             </div>
 

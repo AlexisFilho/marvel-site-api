@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="css/style.css">
+
 <div class="row">
     <?php
         $arquivo = "https://gateway.marvel.com:443/v1/public/creators".URL;
