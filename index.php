@@ -11,8 +11,10 @@
     <title>Marvel Site Api</title>
     <base href="http://localhost/marvel-site-api/">
 
-    <link rel="shortcut icon" href="imagens/shield.png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="css/nav-bar-on-side.css">
@@ -34,7 +36,7 @@
         <nav class="nav">
             <div> 
                 <a href="home" class="nav_logo"> 
-                    <i class='bx bx-layer nav_logo-icon'></i> 
+                    <img src="imagens/logoM.png" alt="" class="icon">
                     <span class="nav_logo-name">Marvel-site</span> 
                 </a>
                 <div class="nav_list"> 

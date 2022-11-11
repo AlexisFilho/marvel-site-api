@@ -1,5 +1,20 @@
 <link rel="stylesheet" href="css/style.css">
+<!-- <style>
+    main{
+        background-image: url("imagens/fundoPersonagens.jpg") !important;
+        background-repeat: no-repeat;
+        background-size: 90vw;
+    };
+</style> -->
+<div class="bHbox">
+    <img src="imagens/fundoPersonagens.jpg" class="backHead">
+</div>
 
+<div class="pageHead">
+    <font color="white">
+        <h1 class="text-center pageTitle">Personagens</h1>
+    </font>
+</div>
 <div class="row">
     <?php
         $arquivo = "https://gateway.marvel.com:443/v1/public/characters".URL;

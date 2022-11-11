@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="css/slider.css">
 
 <a href="personagens">
-    <font color="black">
+    <font color="white">
         <h2>Personagens:</h2>
     </font>
 </a>
@@ -45,7 +45,7 @@
 <br>
 
 <a href="series">
-    <font color="black">
+    <font color="white">
         <h2>Séries:</h2>
     </font>
 </a>
@@ -88,7 +88,7 @@
 <br>
 
 <a href="quadrinhos">
-    <font color="black">
+    <font color="white">
         <h2>Quadrinhos:</h2>
     </font>
 </a>
@@ -131,7 +131,7 @@
 <br>
 
 <a href="sagas">
-    <font color="black">
+    <font color="white">
         <h2>Sagas:</h2>
     </font>
 </a>
@@ -174,7 +174,7 @@
 <br>
 
 <a href="criadores">
-    <font color="black">
+    <font color="white">
         <h2>Criadores:</h2>
     </font>
 </a>

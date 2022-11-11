@@ -1,9 +1,17 @@
 <link rel="stylesheet" href="css/style.css">
-<font color="white">
-    <h1>Quadrinhos</h1>
-</font>
+
+<div class="bHbox">
+    <img src="imagens/fundoQuadrinhos.jpg" class="backHead">
+</div>
+
+<div class="pageHead">
+    <font color="white">
+        <h1 class="text-center pageTitle">Quadrinhos</h1>
+    </font>
+</div>
 
 <div class="row">
+    
     <?php
         $arquivo = "https://gateway.marvel.com/v1/public/comics".URL;
         $dados = file_get_contents($arquivo);

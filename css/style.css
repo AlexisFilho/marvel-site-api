@@ -2,12 +2,42 @@ html {
     height: 100%;
 }
 
+.icon{
+    width: 30px;
+
+}
+.backHead{
+    width: 96vw;
+    -webkit-mask-image: linear-gradient(to top, transparent 15%, black 75%);
+    filter: brightness(50%);
+    filter: blur(4px);
+}
+.bHbox{
+    margin-top: -5.8vh;
+    margin-left: -5.8vw;
+    position: absolute;
+    width: 95.1vw;
+    overflow: hidden;    
+    z-index: -100;
+}
+.pageTitle{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 80px;
+    -webkit-text-stroke: 1px black;
+}
+.pageHead{
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .container{
     margin-top: 30px;
 }
 body {
     font-family: sans-serif;
     background: rgb(47, 47, 47);
+    overflow-x: hidden;
 }
 
 .login-box {
@@ -30,6 +60,9 @@ body {
     text-align: center;
 }
 
+h2{
+    font-family: 'Bebas Neue', cursive;
+}
 .login-box .user-box {
     position: relative;
 }
@@ -298,7 +331,8 @@ a p{
     background: white;
 }
 main{
-    padding-top: 35px;
+    padding-top: 50px;
+    margin: 0px;
 }
 .y{
     background: white;

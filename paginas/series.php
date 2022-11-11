@@ -1,6 +1,17 @@
 <link rel="stylesheet" href="css/style.css">
 
+<div class="bHbox">
+    <img src="imagens/fundoPersonagens.jpg" class="backHead">
+</div>
+
+<div class="pageHead">
+    <font color="white">
+        <h1 class="text-center pageTitle">Series</h1>
+    </font>
+</div>
+
 <div class="row">
+    
     <?php
         $arquivo = "https://gateway.marvel.com:443/v1/public/series".URL;
         $dados = file_get_contents($arquivo);
@@ -12,20 +23,17 @@
             ?>
 
             <div class="col-12 col-md-3">
-                <div class="card">
-                    <img src="<?=$image?>" alt="<?=$serie->title?>">
-                    <div class="card-body text-center">
-                        <p class="titulo">
+                <div class="card text-center y z">
+                    <a href="serie/<?=$serie->id?>">
+                        <div class="dcard">
+                            <img src="<?=$image?>" alt="<?=$serie->title?>" class="cardimg">
+                        </div>
+                        <p>
                             <strong>
                                 <?=$serie->title?>
                             </strong>
                         </p>
-                        <p>
-                            <a href="serie/<?=$serie->id?>" class="btn btn-warning">
-                                Ver série
-                            </a>
-                        </p>
-                    </div>
+                    </a>
                 </div>
             </div>
 

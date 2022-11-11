@@ -8,7 +8,7 @@
     if ( empty($id) ) {
         include "erro.php";
     } else {
-        echo $arquivo = "https://gateway.marvel.com:443/v1/public/creators/{$id}".URL;
+        $arquivo = "https://gateway.marvel.com:443/v1/public/creators/{$id}".URL;
         
         $dados = file_get_contents($arquivo);
         $dados = json_decode($dados);
@@ -19,7 +19,7 @@
 
         $results = $dados->data->results[0];
         $poster = $results->thumbnail;
-        $image = "{$poster->path}/standard_fantastic.{$poster->extension}";
+        $image = "{$poster->path}/portrait_uncanny.{$poster->extension}";
 
         // $description = getDescriptionFromCharacter($results->id);
         
@@ -37,13 +37,16 @@
             </div>
         </div>
 
-        <font color="black">
+        <br>
+        <br>
+
+        <font color="white">
             <h2>Quadrinhos que participou:</h2>
         </font>
 
         <div class="row">
             <?php
-                echo $arquivo = "http://gateway.marvel.com/v1/public/creators/{$id}/comics".URL;
+                $arquivo = "http://gateway.marvel.com/v1/public/creators/{$id}/comics".URL;
 
                 $dados = file_get_contents($arquivo);
                 $dados = json_decode($dados);
@@ -57,7 +60,7 @@
                         $image = "{$poster->path}/portrait_uncanny.{$poster->extension}";
                 ?>
                     <li>
-                        <div class="card text-center y">
+                        <div class="card text-center y z">
                             <a href="quadrinho/<?=$quadrinho->id?>">
                                 <div class="dcard">
                                     <img src="<?=$image?>" class="cardimg">
@@ -74,13 +77,16 @@
             </ul>
         </div>
 
-        <font color="black">
+        <br>
+        <br>
+
+        <font color="white">
             <h2>Séries que participou:</h2>
         </font>
 
         <div class="row">
             <?php
-                echo $arquivo = "http://gateway.marvel.com/v1/public/creators/{$id}/series".URL;
+                $arquivo = "http://gateway.marvel.com/v1/public/creators/{$id}/series".URL;
 
                 $dados = file_get_contents($arquivo);
                 $dados = json_decode($dados);
@@ -94,7 +100,7 @@
                         $image = "{$poster->path}/portrait_uncanny.{$poster->extension}";
                 ?>
                     <li>
-                        <div class="card text-center y">
+                        <div class="card text-center y z">
                             <a href="serie/<?=$serie->id?>">
                                 <div class="dcard">
                                     <img src="<?=$image?>" class="cardimg">
@@ -111,13 +117,16 @@
             </ul>
         </div>
 
-        <font color="black">
+        <br>
+        <br>
+
+        <font color="white">
             <h2>Sagas que participou:</h2>
         </font>
 
         <div class="row">
             <?php
-                echo $arquivo = "http://gateway.marvel.com/v1/public/creators/{$id}/events".URL;
+                $arquivo = "http://gateway.marvel.com/v1/public/creators/{$id}/events".URL;
 
                 $dados = file_get_contents($arquivo);
                 $dados = json_decode($dados);
@@ -131,7 +140,7 @@
                         $image = "{$poster->path}/portrait_uncanny.{$poster->extension}";
                 ?>
                     <li>
-                        <div class="card text-center y">
+                        <div class="card text-center y z">
                             <a href="saga/<?=$saga->id?>">
                                 <div class="dcard">
                                     <img src="<?=$image?>" class="cardimg">
