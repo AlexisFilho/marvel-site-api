@@ -2,11 +2,95 @@ html {
     height: 100%;
 }
 
+.icon{
+    width: 30px;
+
+}
+.backHead{
+    width: 96vw;
+    filter: brightness(40%);
+}
+.backHeadH{
+    width: 96vw;
+    filter: brightness(40%);
+}
+.bblur{
+    filter: blur(4px);
+
+}
+.bHbox{
+    margin-top: -7vh;
+    margin-left: -5.8vw;
+    position: absolute;
+    width: 95.1vw;
+    overflow: hidden;    
+    z-index: -100;
+}
+.bHboxH{
+    margin-top: -5.8vh;
+    margin-left: -5.8vw;
+    position: absolute;
+    width: 95.1vw;
+    overflow: hidden;    
+    z-index: -100;
+}
+.bHboxC{
+    margin-top: -28vh;
+    margin-left: -5.8vw;
+    position: absolute;
+    width: 95.1vw;
+    overflow: hidden;    
+    z-index: -100;
+}
+.bHboxP{
+    margin-top: -33vh;
+    margin-left: -5.8vw;
+    position: absolute;
+    width: 95.1vw;
+    overflow: hidden;    
+    z-index: -100;
+}
+.pageTitle{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 120px;
+    
+}
+.homeTitle{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 180px;
+    margin-top: 55vh;
+}
+.cTitle{
+    font-family: 'Bebas Neue', cursive;
+    margin-top: 6vh;
+    margin-bottom: 4vh;
+}
+.cCont{
+    font-family: 'Barlow Condensed', sans-serif;
+    margin-right: 2vw;
+    font-weight: 900;
+    font-size: 20px;
+}
+.pageHead{
+    height: 93vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.homeHead{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3vh;
+}
+.container{
+    margin-top: 30px;
+}
 body {
-    margin: 0;
-    padding: 0;
     font-family: sans-serif;
-    background: linear-gradient(#000000, #434343);
+    background: rgb(47, 47, 47);
+    overflow-x: hidden;
 }
 
 .login-box {
@@ -29,6 +113,9 @@ body {
     text-align: center;
 }
 
+h2{
+    font-family: 'Bebas Neue', cursive;
+}
 .login-box .user-box {
     position: relative;
 }
@@ -79,7 +166,25 @@ body {
     margin-top: 40px;
     letter-spacing: 4px;
 }
+.y a{
+    text-decoration: none;
+    color: black;
+    transition-delay: .20s;
+}
 
+a p{
+    height: 17vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+}
+.y a:hover{
+    text-decoration: none;
+    border: 1px black;
+    transition-delay: .20s;
+    color: white;
+}
 .login-box a:hover {
     background: #ff0043;
     color: #fff;
@@ -168,4 +273,144 @@ body {
     50%,100% {
         bottom: 100%;
     }
+}
+.card{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 0px;
+    box-shadow: 4px 4px 8px 2px black;
+}
+.card .cardimg:hover{
+    transform: scale(1.05);
+}
+.dcard{
+    overflow: hidden;
+}
+
+.card-body{
+    padding: 3px 3px 0px 3px;
+}
+
+.logo{
+    width: 100px !important;
+}
+
+.card .titulo{
+    height: 70px;
+}
+.sliderN{
+    align-items: center;
+}
+.sliderG{
+    margin: 0px;
+}
+.sliderN .prev-arrow{
+    position: absolute;
+    margin-top: 20vh;
+    left: 0px;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    background: red;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    display: inline-block;
+    cursor: pointer;
+    padding-top: 17px;
+    z-index: 5;
+}
+.sliderN .prev-arrow:hover{
+    background: rgb(168, 1, 1);
+}
+.sliderN .next-arrow{
+    position: absolute;
+    margin-top: 20vh;
+    top: 0px;
+    right: 0px;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    background: red;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    display: inline-block;
+    cursor: pointer;
+    padding-top: 17px;
+}
+.sliderN .next-arrow:hover{
+    background: rgb(168, 1, 1);
+}
+.sliderG .prev-arrow{
+    position: absolute;
+    margin-top: 40vh;
+    left: 0px;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    background: red;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    display: inline-block;
+    cursor: pointer;
+    padding-top: 17px;
+    z-index: 5;
+}
+.sliderG .prev-arrow:hover{
+    background: rgb(168, 1, 1);
+}
+.sliderG .next-arrow{
+    position: absolute;
+    margin-top: 40vh;
+    top: 0px;
+    right: 0px;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    background: red;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    display: inline-block;
+    cursor: pointer;
+    padding-top: 17px;
+}
+.sliderG .next-arrow:hover{
+    background: rgb(168, 1, 1);
+}
+
+.backwhite {
+    background: white;
+}
+main{
+    padding-top: 50px;
+    margin: 0px;
+}
+.y{
+    background: white;
+    box-shadow: inset 0 -3px 0 -1px red;
+    transition: box-shadow .25s ease-in-out;
+    color: black;
+    line-height: 40px;
+}
+.z{
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.y:hover{
+    box-shadow: inset 0 -35vh 0 -1px red;
+}
+.sBorder{
+    box-shadow: 0px 4px 8px 2px black;
+    padding: 0px;
+}
+footer{
+    background-color: black;
+    color: white;
+    width: 100vw;
+    line-height: 10vh;
+    justify-content: center;
+    margin-left: -5vw;
 }
