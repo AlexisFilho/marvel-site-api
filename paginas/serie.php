@@ -47,8 +47,6 @@
 
                 $dados = file_get_contents($arquivo);
                 $dados = json_decode($dados);
-
-                // echo $dados;
             ?>
             <ul class="sliderG">
                 <?php
@@ -87,8 +85,6 @@
 
                 $dados = file_get_contents($arquivo);
                 $dados = json_decode($dados);
-
-                // echo $dados;
             ?>
             <ul class="sliderN">
                 <?php
@@ -127,8 +123,6 @@
 
                 $dados = file_get_contents($arquivo);
                 $dados = json_decode($dados);
-
-                // echo $dados;
             ?>
             <ul class="sliderG">
                 <?php

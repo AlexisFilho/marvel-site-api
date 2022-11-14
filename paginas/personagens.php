@@ -1,11 +1,4 @@
 <link rel="stylesheet" href="css/style.css">
-<!-- <style>
-    main{
-        background-image: url("imagens/fundoPersonagens.jpg") !important;
-        background-repeat: no-repeat;
-        background-size: 90vw;
-    };
-</style> -->
 <div class="bHboxP">
     <img src="imagens/fundoPersonagens.jpg" class="backHead">
 </div>

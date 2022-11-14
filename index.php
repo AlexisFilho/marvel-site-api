@@ -71,34 +71,6 @@
     <div class="row">
         <div class="col-12 col-md-2 backwhite">
 
-            <!-- <div class="container">
-                <div class="nav flex-column" id="navbarSupportedContent">
-                    <a href="index.php">
-                        <img src="imagens/logo.png" alt="marvel" class="logo">
-                    </a>
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.php">HOME</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="personagens">PERSONAGENS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="series">SÉRIES</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="quadrinhos">QUADRINHOS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="sagas">SAGAS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="criadores">CRIADORES</a>
-                        </li>
-                    </ul>
-                </div>
-            </div> -->
-
         </div>
         <div>
             <main class="container">

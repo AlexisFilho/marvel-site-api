@@ -43,8 +43,6 @@
 
                 $dados = file_get_contents($arquivo);
                 $dados = json_decode($dados);
-
-                // echo $dados;
             ?>
             <ul class="sliderN">
                 <?php
@@ -88,7 +86,6 @@
             ?>
             <ul class="sliderG">
                 <?php
-                    // echo $dados;
                     foreach($dados->data->results as $criador) {
                         $poster = $criador->thumbnail;
                         $image = "{$poster->path}/portrait_uncanny.{$poster->extension}";
@@ -126,8 +123,6 @@
 
                 $dados = file_get_contents($arquivo);
                 $dados = json_decode($dados);
-
-                // echo $dados;
             ?>
 
             <ul class="sliderG">
@@ -169,8 +164,6 @@
 
                 $dados = file_get_contents($arquivo);
                 $dados = json_decode($dados);
-                
-                // echo $dados;
             ?>
             <ul class=sliderG>
                 <?php

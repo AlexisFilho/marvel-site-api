@@ -20,10 +20,6 @@
         $results = $dados->data->results[0];
         $poster = $results->thumbnail;
         $image = "{$poster->path}/portrait_uncanny.{$poster->extension}";
-
-        // $description = getDescriptionFromCharacter($results->id);
-        
-        // echo $results;
         ?>
         <div class="card">
             <div class="row">
@@ -50,8 +46,6 @@
 
                 $dados = file_get_contents($arquivo);
                 $dados = json_decode($dados);
-
-                // echo $dados;
             ?>
             <ul class="sliderG">
                 <?php
@@ -92,8 +86,6 @@
 
                 $dados = file_get_contents($arquivo);
                 $dados = json_decode($dados);
-
-                // echo $dados;
             ?>
             <ul class="sliderG">
                 <?php
@@ -134,8 +126,6 @@
 
                 $dados = file_get_contents($arquivo);
                 $dados = json_decode($dados);
-
-                // echo $dados;
             ?>
             <ul class="sliderG">
                 <?php

@@ -22,8 +22,6 @@
         $image = "{$poster->path}/portrait_uncanny.{$poster->extension}";
 
         $description = getDescriptionFromCharacter($results->id);
-        
-        // echo $results;
         ?>
 
         <div class="card">
@@ -51,8 +49,6 @@
 
                 $dados = file_get_contents($arquivo);
                 $dados = json_decode($dados);
-
-                // echo $dados;
             ?>
             <ul class="sliderG">
                 <?php
@@ -93,8 +89,6 @@
 
                 $dados = file_get_contents($arquivo);
                 $dados = json_decode($dados);
-
-                // echo $dados;
             ?>
             <ul class="sliderG">
                 <?php
@@ -135,8 +129,6 @@
 
                 $dados = file_get_contents($arquivo);
                 $dados = json_decode($dados);
-
-                // echo $dados;
             ?>
             <ul class="sliderG">
                 <?php
