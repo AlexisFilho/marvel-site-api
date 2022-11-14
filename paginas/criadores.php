@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="css/style.css">
 
 <div class="bHbox">
-    <img src="https://www.jornaljoca.com.br/wp-content/uploads/2017/07/comiccon.jpg" class="backHead">
+    <img src="imagens/criadores.jpg" class="backHead">
 </div>
 
 <div class="pageHead">
@@ -23,17 +23,19 @@
             ?>
 
             <div class="col-12 col-md-3">
-                <div class="card text-center y z">
-                    <a href="criador/<?=$creator->id?>">
-                        <div class="dcard">
-                            <img src="<?=$image?>" alt="<?=$creator->title?>" class="cardimg">
-                        </div>
-                        <p>
-                            <strong>
-                                <?=$creator->fullName?>
-                            </strong>
-                        </p>
-                    </a>
+                <div class="sBorder z">
+                    <div class="card text-center y">
+                        <a href="criador/<?=$creator->id?>">
+                            <div class="dcard">
+                                <img src="<?=$image?>" alt="<?=$creator->title?>" class="cardimg">
+                            </div>
+                            <p>
+                                <strong>
+                                    <?=$creator->fullName?>
+                                </strong>
+                            </p>
+                        </a>
+                    </div>
                 </div>
             </div>
 

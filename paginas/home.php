@@ -1,6 +1,16 @@
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/slider.css">
 
+<div class="bHboxH">
+    <img src="imagens/home.jpg" class="backHeadH">
+</div>
+
+<div class="homeHead">
+    <font color="white">
+        <h1 class="text-center homeTitle">MARVEL</h1>
+    </font>
+</div>
+
 <a href="personagens">
     <font color="white">
         <h2>Personagens:</h2>
@@ -23,15 +33,17 @@
                     $image = "{$poster->path}/portrait_incredible.{$poster->extension}";
             ?>
                     <div class="slide">
-                        <div class="card card-slide text-center y">
-                            <a href="personagem/<?=$personagem->id?>">
-                                <div class="dcard">
-                                    <img src="<?=$image?>" class="cardimg">
-                                </div>
-                                <p>
-                                    <strong><?=$personagem->name?></strong>
-                                </p>
-                            </a>
+                        <div class="sBorder">
+                            <div class="card card-slide text-center y">
+                                <a href="personagem/<?=$personagem->id?>">
+                                    <div class="dcard">
+                                        <img src="<?=$image?>" class="cardimg">
+                                    </div>
+                                    <p>
+                                        <strong><?=$personagem->name?></strong>
+                                    </p>
+                                </a>
+                            </div>
                         </div>
                     </div>
             <?php
@@ -66,15 +78,17 @@
                     $image = "{$poster->path}/portrait_incredible.{$poster->extension}";
             ?>
                     <div class="slide">
-                        <div class="card card-slide text-center y">
-                            <a href="serie/<?=$serie->id?>">
-                                <div class="dcard">
-                                    <img src="<?=$image?>" class="cardimg">
-                                </div>
-                                <p>
-                                    <strong><?=$serie->title?></strong>
-                                </p>
-                            </a>
+                        <div class="sBorder">
+                            <div class="card card-slide text-center y">
+                                <a href="serie/<?=$serie->id?>">
+                                    <div class="dcard">
+                                        <img src="<?=$image?>" class="cardimg">
+                                    </div>
+                                    <p>
+                                        <strong><?=$serie->title?></strong>
+                                    </p>
+                                </a>
+                            </div>
                         </div>
                     </div>
             <?php
@@ -109,15 +123,17 @@
                     $image = "{$poster->path}/portrait_incredible.{$poster->extension}";
             ?>
                     <div class="slide">
-                        <div class="card card-slide text-center y">
-                            <a href="quadrinho/<?=$quadrinho->id?>">
-                                <div class="dcard">
-                                    <img src="<?=$image?>" alt="">
-                                </div>
-                                <p>
-                                    <strong><?=$quadrinho->title?></strong>
-                                </p>
-                            </a>
+                        <div class="sBorder">
+                            <div class="card card-slide text-center y">
+                                <a href="quadrinho/<?=$quadrinho->id?>">
+                                    <div class="dcard">
+                                        <img src="<?=$image?>" alt="">
+                                    </div>
+                                    <p>
+                                        <strong><?=$quadrinho->title?></strong>
+                                    </p>
+                                </a>
+                            </div>
                         </div>
                     </div>
             <?php
@@ -152,15 +168,17 @@
                     $image = "{$poster->path}/portrait_incredible.{$poster->extension}";
             ?>
                     <div class="slide">
-                        <div class="card card-slide text-center y">
-                            <a href="saga/<?=$saga->id?>">
-                                <div class="dcard">
-                                    <img src="<?=$image?>" class="cardimg">
-                                </div>
-                                <p>
-                                    <strong><?=$saga->title?></strong>
-                                </p>
-                            </a>
+                        <div class="sBorder">
+                            <div class="card card-slide text-center y">
+                                <a href="saga/<?=$saga->id?>">
+                                    <div class="dcard">
+                                        <img src="<?=$image?>" class="cardimg">
+                                    </div>
+                                    <p>
+                                        <strong><?=$saga->title?></strong>
+                                    </p>
+                                </a>
+                            </div>
                         </div>
                     </div>
             <?php
@@ -196,15 +214,17 @@
                     $image = "{$poster->path}/portrait_incredible.{$poster->extension}";
             ?>
                     <div class="slide">
-                        <div class="card card-slide text-center y">
-                            <a href="criador/<?=$criador->id?>">
-                                <div class="dcard">
-                                    <img src="<?=$image?>" class="cardimg">
-                                </div>
-                                <p>
-                                    <strong><?=$criador->fullName?></strong>
-                                </p>
-                            </a>
+                        <div class="sBorder">
+                            <div class="card card-slide text-center y">
+                                <a href="criador/<?=$criador->id?>">
+                                    <div class="dcard">
+                                        <img src="<?=$image?>" class="cardimg">
+                                    </div>
+                                    <p>
+                                        <strong><?=$criador->fullName?></strong>
+                                    </p>
+                                </a>
+                            </div>
                         </div>
                     </div>
             <?php

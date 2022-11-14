@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="css/style.css">
 
-<div class="bHbox">
+<div class="bHboxC">
     <img src="imagens/fundoQuadrinhos.jpg" class="backHead">
 </div>
 
@@ -23,17 +23,19 @@
             $cover = $image."/portrait_uncanny.".$extension;
             ?>
                 <div class="col-12 col-md-3">
-                    <div class="card text-center y">
-                        <a href="quadrinho/<?=$quadrinho->id?>">
-                            <div class="dcard">
-                                <img src="<?=$cover?>" alt="<?=$quadrinho->title?>" class="cardimg">
-                            </div>
-                            <p>
-                                <strong>
-                                    <?=$quadrinho->title?>
-                                </strong>
-                            </p>
-                        </a>
+                    <div class="sBorder">
+                        <div class="card text-center y">
+                            <a href="quadrinho/<?=$quadrinho->id?>">
+                                <div class="dcard">
+                                    <img src="<?=$cover?>" alt="<?=$quadrinho->title?>" class="cardimg">
+                                </div>
+                                <p>
+                                    <strong>
+                                        <?=$quadrinho->title?>
+                                    </strong>
+                                </p>
+                            </a>
+                        </div>
                     </div>
                 </div>
             <?php

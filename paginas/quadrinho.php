@@ -31,9 +31,9 @@
                 <div class="col-12 col-md-3">
                     <img src="<?=$image?>" alt="<?=$results->title?>" class="w-100">
                 </div>
-                <div class="col-12 col-md-9 text-justify">
-                    <h1 class="text-center"><?=$results->title?></h1>
-                    <p><?=$results->description?></p>
+                <div class="col-12 col-md-9 text-center">
+                    <h1 class="text-center cTitle"><?=$results->title?></h1>
+                    <p class="cCont"><?=$results->description?></p>
                 </div>
             </div>
         </div>
@@ -61,15 +61,17 @@
                         $image = "{$poster->path}/standard_fantastic.{$poster->extension}";
                 ?>
                     <li>
-                        <div class="card text-center y z">
-                            <a href="personagem/<?=$personagem->id?>">
-                                <div class="dcard">
-                                    <img src="<?=$image?>" class="cardimg">
-                                </div>
-                                <p>
-                                    <strong><?=$personagem->name?></strong>
-                                </p>
-                            </a>
+                        <div class="sBorder z">
+                            <div class="card text-center y">
+                                <a href="personagem/<?=$personagem->id?>">
+                                    <div class="dcard">
+                                        <img src="<?=$image?>" class="cardimg">
+                                    </div>
+                                    <p>
+                                        <strong><?=$personagem->name?></strong>
+                                    </p>
+                                </a>
+                            </div>
                         </div>
                     </li>
                 <?php
@@ -101,15 +103,17 @@
                         $image = "{$poster->path}/portrait_uncanny.{$poster->extension}";
                 ?>
                     <li>
-                        <div class="card text-center y z">
-                            <a href="criador/<?=$criador->id?>">
-                                <div class="dcard">
-                                    <img src="<?=$image?>" class="cardimg">
-                                </div>
-                                <p>
-                                    <strong><?=$criador->fullName?></strong>
-                                </p>
-                            </a>
+                        <div class="sBorder z">
+                            <div class="card text-center y">
+                                <a href="criador/<?=$criador->id?>">
+                                    <div class="dcard">
+                                        <img src="<?=$image?>" class="cardimg">
+                                    </div>
+                                    <p>
+                                        <strong><?=$criador->fullName?></strong>
+                                    </p>
+                                </a>
+                            </div>
                         </div>
                     </li>
                 <?php
@@ -141,15 +145,17 @@
                         $image = "{$poster->path}/portrait_uncanny.{$poster->extension}";
                 ?>
                     <li>
-                        <div class="card text-center y z">
-                            <a href="saga/<?=$saga->id?>">
-                                <div class="dcard">
-                                    <img src="<?=$image?>" class="cardimg">
-                                </div>
-                                <p>
-                                    <strong><?=$saga->title?></strong>
-                                </p>
-                            </a>
+                        <div class="sBorder z">
+                            <div class="card text-center y">
+                                <a href="saga/<?=$saga->id?>">
+                                    <div class="dcard">
+                                        <img src="<?=$image?>" class="cardimg">
+                                    </div>
+                                    <p>
+                                        <strong><?=$saga->title?></strong>
+                                    </p>
+                                </a>
+                            </div>
                         </div>
                     </li>
                 <?php

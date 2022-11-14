@@ -23,17 +23,19 @@
             ?>
 
             <div class="col-12 col-md-3">
-                <div class="card text-center y z">
-                    <a href="saga/<?=$events->id?>">
-                        <div class="dcard">
-                            <img src="<?=$image?>" alt="<?=$events->title?>" class="cardimg">
-                        </div>
-                        <p>
-                            <strong>
-                                <?=$events->title?>
-                            </strong>
-                        </p>
-                    </a>
+                <div class="sBorder">
+                    <div class="card text-center y">
+                        <a href="saga/<?=$events->id?>">
+                            <div class="dcard">
+                                <img src="<?=$image?>" alt="<?=$events->title?>" class="cardimg">
+                            </div>
+                            <p>
+                                <strong>
+                                    <?=$events->title?>
+                                </strong>
+                            </p>
+                        </a>
+                    </div>
                 </div>
             </div>
 

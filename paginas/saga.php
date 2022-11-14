@@ -23,13 +23,9 @@
                 <div class="col-12 col-md-3">
                     <img src="<?=$image?>" alt="<?=$results->title?>">
                 </div>
-                <div class="col-12 col-md-9 text-justify">
-                    <h1 class="text-center">
-                        <strong>
-                            <?=$results->title?>
-                        </strong>    
-                    </h1>
-                    <p><?=$results->description?></p>
+                <div class="col-12 col-md-9 text-center">
+                    <h1 class="text-center cTitle"><?=$results->title?></h1>
+                    <p class="cCont"><?=$results->description?></p>
                 </div>
             </div>
         </div>
@@ -57,15 +53,17 @@
                         $image = "{$poster->path}/standard_fantastic.{$poster->extension}";
                 ?>
                     <li>
-                        <div class="card text-center y z">
-                            <a href="personagem/<?=$quadrinho->id?>">
-                                <div class="dcard">
-                                    <img src="<?=$image?>" class="cardimg">
-                                </div>
-                                <p>
-                                    <strong><?=$quadrinho->name?></strong>
-                                </p>
-                            </a>
+                        <div class="sBorder z">
+                            <div class="card text-center y">
+                                <a href="personagem/<?=$quadrinho->id?>">
+                                    <div class="dcard">
+                                        <img src="<?=$image?>" class="cardimg">
+                                    </div>
+                                    <p>
+                                        <strong><?=$quadrinho->name?></strong>
+                                    </p>
+                                </a>
+                            </div>
                         </div>
                     </li>
                 <?php
@@ -96,17 +94,17 @@
                         $image = "{$poster->path}/portrait_uncanny.{$poster->extension}";
                 ?>
                 <li>
-                    <div class="card text-center y z">
-                        <a href="criador/<?=$criador->id?>">
-                            <div class="dcard">
-                                <img src="<?=$image?>" class="cardimg">
-                            </div>
-                            <div class="card-body text-center">
+                    <div class="sBorder z">
+                        <div class="card text-center y">
+                            <a href="criador/<?=$criador->id?>">
+                                <div class="dcard">
+                                    <img src="<?=$image?>" class="cardimg">
+                                </div>
                                 <p>
                                     <strong><?=$criador->fullName?></strong>
                                 </p>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
                     </div>
                 </li>
                 <?php
@@ -139,15 +137,17 @@
                     $image = "{$poster->path}/portrait_uncanny.{$poster->extension}";
                 ?>
                 <li>
-                    <div class="card text-center y z">
-                        <a href="quadrinho/<?=$quadrinho->id?>">
-                            <div class="dcard">
-                                <img src="<?=$image?>" class="cardimg">
-                            </div>
-                            <p>
-                                <strong><?=$quadrinho->title?></strong>
-                            </p>
-                        </a>
+                    <div class="sBorder z">
+                        <div class="card text-center y">
+                            <a href="quadrinho/<?=$quadrinho->id?>">
+                                <div class="dcard">
+                                    <img src="<?=$image?>" class="cardimg">
+                                </div>
+                                <p>
+                                    <strong><?=$quadrinho->title?></strong>
+                                </p>
+                            </a>
+                        </div>
                     </div>
                 </li>
                 <?php
@@ -179,15 +179,17 @@
                     $image = "{$poster->path}/portrait_uncanny.{$poster->extension}";
                 ?>
                 <li>
-                    <div class="card text-center y z">
-                        <a href="serie/<?=$serie->id?>">
-                            <div class="dcard">
-                                <img src="<?=$image?>" class="cardimg">
-                            </div>
-                            <p>
-                                <strong><?=$serie->title?></strong>
-                            </p>
-                        </a>
+                    <div class="sBorder z">
+                        <div class="card text-center y">
+                            <a href="serie/<?=$serie->id?>">
+                                <div class="dcard">
+                                    <img src="<?=$image?>" class="cardimg">
+                                </div>
+                                <p>
+                                    <strong><?=$serie->title?></strong>
+                                </p>
+                            </a>
+                        </div>
                     </div>
                 </li>
                 <?php

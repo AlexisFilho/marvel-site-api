@@ -27,9 +27,9 @@
                 <div class="col-12 col-md-3">
                     <img src="<?=$image?>" alt="<?=$results->title?>" class="w-100">
                 </div>
-                <div class="col-12 col-md-9 text-justify">
-                    <h1 class="text-center"><?=$results->title?></h1>
-                    <p><?=$results->description?></p>
+                <div class="col-12 col-md-9 text-center">
+                    <h1 class="text-center cTitle"><?=$results->title?></h1>
+                    <p class="cCont"><?=$results->description?></p>
                 </div>
             </div>
         </div>

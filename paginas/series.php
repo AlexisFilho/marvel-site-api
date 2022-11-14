@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="css/style.css">
 
-<div class="bHbox">
+<div class="bHboxP">
     <img src="imagens/fundoPersonagens.jpg" class="backHead">
 </div>
 
@@ -23,17 +23,19 @@
             ?>
 
             <div class="col-12 col-md-3">
-                <div class="card text-center y z">
-                    <a href="serie/<?=$serie->id?>">
-                        <div class="dcard">
-                            <img src="<?=$image?>" alt="<?=$serie->title?>" class="cardimg">
-                        </div>
-                        <p>
-                            <strong>
-                                <?=$serie->title?>
-                            </strong>
-                        </p>
-                    </a>
+                <div class="sBorder"> 
+                    <div class="card text-center y">
+                        <a href="serie/<?=$serie->id?>">
+                            <div class="dcard">
+                                <img src="<?=$image?>" alt="<?=$serie->title?>" class="cardimg">
+                            </div>
+                            <p>
+                                <strong>
+                                    <?=$serie->title?>
+                                </strong>
+                            </p>
+                        </a>
+                    </div>
                 </div>
             </div>
 
